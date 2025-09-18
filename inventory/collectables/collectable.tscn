@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://6qqrw1c50ypy"]
+
+[ext_resource type="Script" uid="uid://xe4yb6inregh" path="res://inventory/collectables/collectable.gd" id="1_xlp5e"]
+
+[node name="Collectable" type="Area2D"]
+script = ExtResource("1_xlp5e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

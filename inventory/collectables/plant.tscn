@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddr6rq567qvw2"]
+
+[ext_resource type="PackedScene" uid="uid://6qqrw1c50ypy" path="res://inventory/collectables/collectable.tscn" id="1_3cest"]
+[ext_resource type="Texture2D" uid="uid://dhmpfuiuixut2" path="res://assets/plant.png" id="2_hruwf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y53bh"]
+size = Vector2(24, 40)
+
+[node name="Plant" instance=ExtResource("1_3cest")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, 0)
+shape = SubResource("RectangleShape2D_y53bh")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_hruwf")

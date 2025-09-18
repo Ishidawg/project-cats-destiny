@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://dxhg4n5x315f7"]
+
+[ext_resource type="Script" uid="uid://0wcnnh7ammtd" path="res://teste.gd" id="1_4iivt"]
+[ext_resource type="Script" uid="uid://b7rdfpsq1rfvy" path="res://character_body_2d.gd" id="1_o02vu"]
+[ext_resource type="Texture2D" uid="uid://b1hda2ocukb4e" path="res://icon.svg" id="2_7w86a"]
+[ext_resource type="Script" uid="uid://dppp6wwevjjeo" path="res://canvas_layer.gd" id="3_3iyrq"]
+[ext_resource type="Resource" uid="uid://btu2omi8hxtfc" path="res://inventory/player_inventory.tres" id="3_cgmdw"]
+[ext_resource type="PackedScene" uid="uid://co8iuks1bypf4" path="res://inventory_gui.tscn" id="4_4iivt"]
+[ext_resource type="PackedScene" uid="uid://04uxe0f5xgx8" path="res://inventory/collectables/green_potion.tscn" id="5_grbdc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s2wow"]
+size = Vector2(126, 120)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_grbdc"]
+size = Vector2(123, 121)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3iyrq"]
+size = Vector2(1150, 30)
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(189, 109)
+script = ExtResource("1_4iivt")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_o02vu")
+inventory = ExtResource("3_cgmdw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_s2wow")
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+
+[node name="HitboxArea" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_grbdc")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("2_7w86a")
+
+[node name="GreenPotion" parent="." instance=ExtResource("5_grbdc")]
+position = Vector2(719, 482)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-179, 533)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(568, -5)
+shape = SubResource("RectangleShape2D_3iyrq")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(565, 63)
+scale = Vector2(9, 1.35938)
+texture = ExtResource("2_7w86a")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+script = ExtResource("3_3iyrq")
+
+[node name="InventoryGui" parent="CanvasLayer" instance=ExtResource("4_4iivt")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -135.0
+offset_top = -86.5
+offset_right = 135.0
+offset_bottom = 86.5
+
+[connection signal="area_entered" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_area_entered"]
+[connection signal="closed" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_closed"]
+[connection signal="opened" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_opened"]
