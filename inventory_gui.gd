@@ -8,6 +8,7 @@ var is_open: bool = false
 @onready var inventory: Inventory = preload("res://inventory/player_inventory.tres")
 @onready var item_stack_gui_class = preload("res://gui/item_stack_gui.tscn")
 @onready var slots: Array = $NinePatchRect/GridContainer.get_children()
+@onready var cauldron: Cauldron = $Cauldron
 
 var item_in_hand: ItemStackGui
 
@@ -73,3 +74,11 @@ func update_item_in_hand():
 
 func _input(_event):
 	update_item_in_hand()
+
+
+func _on_cauldron_pressed() -> void:
+	if item_in_hand:
+		var item = item_in_hand
+		remove_child(item_in_hand)
+		item_in_hand = null
+		cauldron.insert(item)

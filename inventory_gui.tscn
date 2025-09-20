@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://co8iuks1bypf4"]
+[gd_scene load_steps=5 format=3 uid="uid://co8iuks1bypf4"]
 
 [ext_resource type="Texture2D" uid="uid://bpnt0v7cqeitx" path="res://assets/temp_inventory background.png" id="1_t08cw"]
 [ext_resource type="Script" uid="uid://dh2a1mttxrkjd" path="res://inventory_gui.gd" id="1_wrc4a"]
+[ext_resource type="PackedScene" uid="uid://daof7codtcofn" path="res://scenes/cauldron.tscn" id="2_4vc5q"]
 [ext_resource type="PackedScene" uid="uid://c1273ltte5id2" path="res://slot_gui.tscn" id="2_8oxm1"]
 
 [node name="InventoryGui" type="Control"]
@@ -15,6 +16,9 @@ offset_bottom = -475.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_wrc4a")
+
+[node name="Cauldron" parent="." instance=ExtResource("2_4vc5q")]
+position = Vector2(136, 224)
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
@@ -86,3 +90,5 @@ layout_mode = 2
 
 [node name="Slot15" parent="NinePatchRect/GridContainer" instance=ExtResource("2_8oxm1")]
 layout_mode = 2
+
+[connection signal="pressed" from="Cauldron" to="." method="_on_cauldron_pressed"]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnssxhw2kcbwk"]
+
+[ext_resource type="PackedScene" uid="uid://co8iuks1bypf4" path="res://inventory_gui.tscn" id="1_iapjp"]
+
+[node name="DemoScene" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+
+[node name="InventoryGui" parent="CanvasLayer" instance=ExtResource("1_iapjp")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -135.0
+offset_top = -86.5
+offset_right = 135.0
+offset_bottom = 86.5
