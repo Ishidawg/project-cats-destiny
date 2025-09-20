@@ -11,9 +11,8 @@ config_version=5
 [application]
 
 config/name="project-cats-destiny"
-run/main_scene="uid://dxhg4n5x315f7"
+run/main_scene="uid://dnssxhw2kcbwk"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
 
 [input]
 

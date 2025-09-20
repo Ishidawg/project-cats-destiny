@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://cadf08ewxxbco"]
 
-[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://inventory_item.gd" id="1_3ca8i"]
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://item_container/components/item.gd" id="1_3ca8i"]
 [ext_resource type="Texture2D" uid="uid://dhmpfuiuixut2" path="res://assets/plant.png" id="2_inxpn"]
 
 [resource]

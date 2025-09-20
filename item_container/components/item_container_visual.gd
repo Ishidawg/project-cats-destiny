@@ -1,12 +1,12 @@
-class_name InventoryGui extends Control
+class_name ItemContainerVisual extends Control
 
 signal opened
 signal closed
 
 var is_open: bool = false
 
-@onready var inventory: Inventory = preload("res://inventory/player_inventory.tres")
-@onready var item_stack_gui_class = preload("res://gui/item_stack_gui.tscn")
+@onready var item_container: ItemContainer = preload("res://item_container/item_container.tres")
+@onready var item_stack_gui_class = preload("res://item_container/components/item_stack_gui.tscn")
 @onready var slots: Array = $NinePatchRect/GridContainer.get_children()
 @onready var cauldron: Cauldron = $Cauldron
 
@@ -14,7 +14,7 @@ var item_in_hand: ItemStackGui
 
 func _ready():
 	connect_slots()
-	inventory.updated.connect(update)
+	item_container.updated.connect(update)
 	update()
 
 func connect_slots():
@@ -26,17 +26,17 @@ func connect_slots():
 		slot.pressed.connect(callable)
 
 func update():
-	for i in range(min(inventory.items.size(), slots.size())):
-		var inventory_item: InventoryItem = inventory.items[i]
+	for i in range(min(item_container.items.size(), slots.size())):
+		var item: Item = item_container.items[i]
 		
-		if !inventory_item: continue
+		if !item: continue
 		
 		var item_stack_gui: ItemStackGui = slots[i].item_stack_gui
 		if !item_stack_gui:
 			item_stack_gui = item_stack_gui_class.instantiate()
 			slots[i].insert(item_stack_gui)
 		
-		item_stack_gui.inventory_item = inventory_item
+		item_stack_gui.item = item
 		item_stack_gui.update()
 
 func open():
@@ -68,17 +68,22 @@ func insert_item_in_slot(slot: Slot):
 	item_in_hand = null
 	slot.insert(item)
 
+func _on_cauldron_pressed() -> void:
+	if item_in_hand and !cauldron.is_full:
+		insert_item_in_cauldron()
+
+func insert_item_in_cauldron():
+	var item = item_in_hand
+	remove_child(item_in_hand)
+	item_in_hand = null
+	cauldron.insert(item)
+
 func update_item_in_hand():
 	if !item_in_hand: return
+	# atualiza a posição do item para a posição do mouse menos o raio do item, para manter ele centralizado
 	item_in_hand.global_position = get_global_mouse_position() - (item_in_hand.size / 2)
 
 func _input(_event):
+	# função é chamado ao executar qualquer input, nesse caso é necessário chamado ao mover o mouse
+	# para atualizar a posição do item
 	update_item_in_hand()
-
-
-func _on_cauldron_pressed() -> void:
-	if item_in_hand:
-		var item = item_in_hand
-		remove_child(item_in_hand)
-		item_in_hand = null
-		cauldron.insert(item)

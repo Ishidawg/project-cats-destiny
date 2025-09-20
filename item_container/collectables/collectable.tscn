@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://6qqrw1c50ypy"]
 
-[ext_resource type="Script" uid="uid://xe4yb6inregh" path="res://inventory/collectables/collectable.gd" id="1_xlp5e"]
-[ext_resource type="Resource" uid="uid://cadf08ewxxbco" path="res://inventory/items/plant.tres" id="2_44n3h"]
+[ext_resource type="Script" uid="uid://xe4yb6inregh" path="res://item_container/collectables/collectable.gd" id="1_xlp5e"]
+[ext_resource type="Resource" uid="uid://cadf08ewxxbco" path="res://item_container/item_resources/plant.tres" id="2_44n3h"]
 
 [node name="Collectable" type="Area2D"]
 script = ExtResource("1_xlp5e")

@@ -2,7 +2,7 @@ class_name Slot extends Button
 
 @onready var backgroud_sprite: Sprite2D = $Background
 @onready var container: CenterContainer = $CenterContainer
-@onready var inventory = preload("res://inventory/player_inventory.tres")
+@onready var item_container = preload("res://item_container/item_container.tres")
 
 var item_stack_gui: ItemStackGui
 var index: int
@@ -12,10 +12,10 @@ func insert(isg: ItemStackGui):
 	backgroud_sprite.frame = 1
 	container.add_child(item_stack_gui)
 	
-	if !item_stack_gui.inventory_item || inventory.items[index] == item_stack_gui.inventory_item:
+	if !item_stack_gui.item || item_container.items[index] == item_stack_gui.item:
 		return
 	
-	inventory.insert_item_at_index(index, item_stack_gui.inventory_item)
+	item_container.insert_item_at_index(index, item_stack_gui.item)
 
 func take_item() -> ItemStackGui:
 	var item = item_stack_gui

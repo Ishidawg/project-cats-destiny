@@ -1,14 +1,20 @@
 class_name Cauldron extends Area2D
 
 signal pressed
+signal full
 
-var item_array: Array[InventoryItem]
+var is_full: bool = false
+const limit = 3
+var item_array: Array[Item]
 
-func insert(item: ItemStackGui):
-	item_array.append(item.inventory_item)
+func insert(item_stack: ItemStackGui):
+	item_array.append(item_stack.item)
 	for i in item_array:
 		print(i.name)
-	print("-------------")
+	
+	if item_array.size() >= limit:
+		is_full = true
+		full.emit()
 
 func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
