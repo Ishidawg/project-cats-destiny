@@ -4,7 +4,7 @@ signal pressed
 signal full
 
 var is_full: bool = false
-const limit = 3
+@export var limit = 3
 var item_array: Array[Item]
 
 func insert(item_stack: ItemStackGui):
