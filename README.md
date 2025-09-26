@@ -1,2 +1,2 @@
-# project-cats-destiny
-dps edito
+# godot-game-systems
+A repo with demo projects to learn about game systems like: dialogue, state machine, game desing, inventory system...
