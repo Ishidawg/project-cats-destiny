@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://04uxe0f5xgx8"]
+
+[ext_resource type="PackedScene" uid="uid://6qqrw1c50ypy" path="res://scenes/item_container/collectables/collectable.tscn" id="1_cthpi"]
+[ext_resource type="Texture2D" uid="uid://c5l6inrneopqr" path="res://assets/Inventory/green_potion.png" id="1_xiif4"]
+[ext_resource type="Resource" uid="uid://crq8lr8hifbhm" path="res://scenes/item_container/item_resources/green_potion.tres" id="2_ubs22"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ubs22"]
+size = Vector2(33, 43)
+
+[node name="green_potion" instance=ExtResource("1_cthpi")]
+item_res = ExtResource("2_ubs22")
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_ubs22")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("1_xiif4")

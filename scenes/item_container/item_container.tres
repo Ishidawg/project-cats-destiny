@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemContainer" load_steps=5 format=3 uid="uid://bq7w3phpr0jbk"]
+
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_lfyv0"]
+[ext_resource type="Resource" uid="uid://crq8lr8hifbhm" path="res://scenes/item_container/item_resources/green_potion.tres" id="2_f4o7o"]
+[ext_resource type="Resource" uid="uid://cadf08ewxxbco" path="res://scenes/item_container/item_resources/plant.tres" id="3_cl37y"]
+[ext_resource type="Script" uid="uid://b4xpgvndqqsre" path="res://scenes/item_container/item_container.gd" id="4_4ymt0"]
+
+[resource]
+script = ExtResource("4_4ymt0")
+items = Array[ExtResource("1_lfyv0")]([ExtResource("2_f4o7o"), null, ExtResource("2_f4o7o"), ExtResource("3_cl37y"), null, ExtResource("2_f4o7o"), null, ExtResource("2_f4o7o"), null, null, null, null, null, null, null])
+metadata/_custom_type_script = "uid://b4xpgvndqqsre"
