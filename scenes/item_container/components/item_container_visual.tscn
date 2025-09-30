@@ -18,7 +18,7 @@ grow_vertical = 2
 script = ExtResource("1_p8kuv")
 
 [node name="Cauldron" parent="." instance=ExtResource("2_60eon")]
-position = Vector2(136, 224)
+position = Vector2(136, 274)
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
