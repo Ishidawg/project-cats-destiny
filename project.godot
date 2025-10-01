@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="project-cats-destiny"
-run/main_scene="uid://cudb6sqxvdpcd"
+run/main_scene="uid://c77viks16xf0n"
 config/features=PackedStringArray("4.5", "Forward Plus")
 
 [autoload]
