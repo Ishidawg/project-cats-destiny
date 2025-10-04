@@ -2,6 +2,7 @@ class_name ItemContainerVisual extends Control
 
 signal opened
 signal closed
+signal cauldron_full(cauldron: Cauldron)
 
 var is_open: bool = false
 
@@ -87,3 +88,7 @@ func _input(_event):
 	# função é chamado ao executar qualquer input, nesse caso é necessário chamado ao mover o mouse
 	# para atualizar a posição do item
 	update_item_in_hand()
+
+
+func _on_cauldron_full() -> void:
+	cauldron_full.emit(cauldron)

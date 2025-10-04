@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ss4yopqqteeq"]
+
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_u2rsd"]
+[ext_resource type="Texture2D" uid="uid://fnr7uadaafpa" path="res://assets/potions/blue_potion.png" id="2_acnyg"]
+
+[resource]
+script = ExtResource("1_u2rsd")
+name = "Blue Potion"
+texture = ExtResource("2_acnyg")
+metadata/_custom_type_script = "uid://dkx6udi2qr4k3"

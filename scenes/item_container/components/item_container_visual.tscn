@@ -8,7 +8,6 @@
 [node name="ItemContainerVisual" type="Control"]
 custom_minimum_size = Vector2(270, 173)
 layout_mode = 3
-anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = -882.0
@@ -18,12 +17,13 @@ grow_vertical = 2
 script = ExtResource("1_p8kuv")
 
 [node name="Cauldron" parent="." instance=ExtResource("2_60eon")]
-position = Vector2(136, 274)
+visibility_layer = 1
+position = Vector2(138, 243)
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
 offset_top = 1.0
-offset_right = 271.0
+offset_right = 261.0
 offset_bottom = 173.0
 texture = ExtResource("3_coree")
 patch_margin_left = 20
@@ -38,13 +38,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -108.0
+offset_left = -86.5
 offset_top = -64.0
-offset_right = 108.0
+offset_right = 88.0
 offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
-columns = 5
+columns = 4
 
 [node name="Slot" parent="NinePatchRect/GridContainer" instance=ExtResource("4_tmuyn")]
 layout_mode = 2
@@ -82,13 +82,5 @@ layout_mode = 2
 [node name="Slot12" parent="NinePatchRect/GridContainer" instance=ExtResource("4_tmuyn")]
 layout_mode = 2
 
-[node name="Slot13" parent="NinePatchRect/GridContainer" instance=ExtResource("4_tmuyn")]
-layout_mode = 2
-
-[node name="Slot14" parent="NinePatchRect/GridContainer" instance=ExtResource("4_tmuyn")]
-layout_mode = 2
-
-[node name="Slot15" parent="NinePatchRect/GridContainer" instance=ExtResource("4_tmuyn")]
-layout_mode = 2
-
+[connection signal="full" from="Cauldron" to="." method="_on_cauldron_full"]
 [connection signal="pressed" from="Cauldron" to="." method="_on_cauldron_pressed"]

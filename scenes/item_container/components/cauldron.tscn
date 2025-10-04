@@ -7,6 +7,7 @@
 radius = 35.0
 
 [node name="Cauldron" type="Area2D"]
+visibility_layer = 16
 script = ExtResource("1_vgvr5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

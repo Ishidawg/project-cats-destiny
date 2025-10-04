@@ -5,14 +5,14 @@ signal full
 
 var is_full: bool = false
 @export var limit = 3
-var item_array: Array[Item]
+var items: Array[Item]
 
 func insert(item_stack: ItemStackGui):
-	item_array.append(item_stack.item)
-	for i in item_array:
+	items.append(item_stack.item)
+	for i in items:
 		print(i.name)
 	
-	if item_array.size() >= limit:
+	if items.size() >= limit:
 		is_full = true
 		full.emit()
 

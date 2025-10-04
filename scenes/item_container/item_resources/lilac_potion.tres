@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dp1q3l2da30hu"]
+
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_add8m"]
+[ext_resource type="Texture2D" uid="uid://bsgltuwq636s7" path="res://assets/potions/lilac_potion.png" id="2_add8m"]
+
+[resource]
+script = ExtResource("1_add8m")
+name = "Lilac Potion"
+texture = ExtResource("2_add8m")
+metadata/_custom_type_script = "uid://dkx6udi2qr4k3"

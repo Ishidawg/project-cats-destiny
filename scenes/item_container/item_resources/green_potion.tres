@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://crq8lr8hifbhm"]
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://l0j0vy284jth"]
 
 [ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_4b06j"]
-[ext_resource type="Texture2D" uid="uid://c5l6inrneopqr" path="res://assets/Inventory/green_potion.png" id="2_wqjgk"]
+[ext_resource type="Texture2D" uid="uid://c5l6inrneopqr" path="res://assets/potions/green_potion.png" id="2_ru568"]
 
 [resource]
 script = ExtResource("1_4b06j")
 name = "Green Potion"
-texture = ExtResource("2_wqjgk")
+texture = ExtResource("2_ru568")
 metadata/_custom_type_script = "uid://dkx6udi2qr4k3"

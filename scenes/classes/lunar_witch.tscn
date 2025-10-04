@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhdvpiren8ra2"]
+
+[ext_resource type="Script" uid="uid://t24qmxde5pot" path="res://scenes/classes/lunar_witch.gd" id="1_jfoo2"]
+[ext_resource type="Texture2D" uid="uid://gv0ojeer8hfx" path="res://assets/Classes/lunar_witch.png" id="2_2s570"]
+
+[node name="LunarWitch" type="Node"]
+script = ExtResource("1_jfoo2")
+description = "Bruxa Lunar"
+texture = ExtResource("2_2s570")
+metadata/_custom_type_script = "uid://ctfp76jx6phh"
