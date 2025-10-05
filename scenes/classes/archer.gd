@@ -1,1 +1,1 @@
-class_name archer extends classe
+class_name Archer extends Classe

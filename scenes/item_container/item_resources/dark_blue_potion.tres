@@ -5,6 +5,7 @@
 
 [resource]
 script = ExtResource("1_pekp1")
+id = 1
 name = "Dark Blue Potion"
 texture = ExtResource("2_tcdye")
 metadata/_custom_type_script = "uid://dkx6udi2qr4k3"

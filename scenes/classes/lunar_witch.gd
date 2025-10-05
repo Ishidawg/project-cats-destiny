@@ -1,1 +1,1 @@
-class_name lunar_witch extends classe
+class_name LunarWitch extends Classe
