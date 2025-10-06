@@ -15,14 +15,22 @@ enum Id {
 	YELLOW = 11
 }
 
+var archer_scene = load("res://scenes/classes/archer.tscn")
+var lunar_witch_scene = load("res://scenes/classes/lunar_witch.tscn")
+var class_presentation_scene = preload("res://scenes/classes/class_presentation.tscn")
+
 var classes_dictionary = {
 	# Os ids chave devem estar em ordem crescente na declaração do dicionário
-	[Id.BLUE,Id.GREEN,Id.PURPLE]: load("res://scenes/classes/archer.tscn"),
-	[Id.GREY,Id.LILAC,Id.RED]   : load("res://scenes/classes/lunar_witch.tscn")
+	[Id.BLUE,Id.GREEN,Id.YELLOW]   : archer_scene,
+	[Id.GREY,Id.LIGHT_RED,Id.LILAC]: lunar_witch_scene 
 }
 
-func _on_cauldron_full(cauldron: Cauldron) -> void:	
+func _on_cauldron_full(cauldron: Cauldron) -> void:
 	cauldron.items.sort()
-	
 	var classe: Classe = classes_dictionary[cauldron.items].instantiate()
-	print(classe.description)
+	
+	var class_presentation: ClassPresentation = class_presentation_scene.instantiate()
+	add_child(class_presentation)
+	class_presentation.load(classe)
+	
+	
