@@ -17,7 +17,11 @@ enum Id {
 
 var archer_scene = load("res://scenes/classes/archer.tscn")
 var lunar_witch_scene = load("res://scenes/classes/lunar_witch.tscn")
+
 var class_presentation_scene = preload("res://scenes/classes/class_presentation.tscn")
+var name_selection_scene = preload("res://scenes/name_selection/name_selection.tscn")
+
+#var player = preload("res://scenes/player/player.tscn")
 
 var classes_dictionary = {
 	# Os ids chave devem estar em QUALQUER ordem
@@ -34,6 +38,21 @@ func _on_cauldron_full(cauldron: Cauldron) -> void:
 	var class_presentation: ClassPresentation = class_presentation_scene.instantiate()
 	add_child(class_presentation)
 	class_presentation.load(classe)
+	await get_tree().create_timer(1).timeout
+	# EXIBE A TELA MEIO PAH
+	
+	class_presentation.free()
+	
+	var name_selection: NameSelection = name_selection_scene.instantiate()
+	add_child(name_selection)
+	await name_selection.select() # Espera inserir o nome
+	
+	print(name_selection.input)
+	
+	#player.instantiate()
+	#add_child(player)
+	#player.classe = classe
+
 
 func sort_dict():
 	for key in classes_dictionary.keys():

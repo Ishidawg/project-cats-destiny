@@ -1,9 +1,10 @@
-class_name player
+class_name Player
 extends CharacterBody2D
 
 
 var speed := 420.0
 @onready var player_sprites: AnimatedSprite2D = %player_sprites
+@export var classe: Classe
 
 func _ready() -> void:
 	SignalDisplayDialogue.connect("display_dialog", Callable(self, "on_display_dialog"))
