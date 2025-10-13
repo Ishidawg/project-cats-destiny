@@ -1,6 +1,6 @@
 class_name NameSelection extends Control
 
-@onready var line_edit: LineEdit = $VBoxContainer/LineEdit
+@onready var line_edit: LineEdit = $VBoxContainer/VBoxContainer/LineEdit
 var input: String
 
 signal PA
@@ -12,7 +12,6 @@ func select():
 		input = line_edit.text
 		if input != "":
 			break
-	self.queue_free()
 	return
 
 func _on_confirm_button_pressed() -> void:

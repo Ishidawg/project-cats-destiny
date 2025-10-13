@@ -61,6 +61,7 @@ func _on_cauldron_full(cauldron: Cauldron) -> void:
 	var name_selection: NameSelection = name_selection_scene.instantiate()
 	add_child(name_selection)
 	await name_selection.select() # Espera inserir o nome
+	remove_child(name_selection)
 	
 	print(name_selection.input)
 	
