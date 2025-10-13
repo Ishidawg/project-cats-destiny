@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bciw78xahggt1"]
+
+[ext_resource type="Script" uid="uid://c517mr2rgqkak" path="res://scenes/classes/bard.gd" id="1_svs16"]
+[ext_resource type="Texture2D" uid="uid://c11eo4nos6b0" path="res://assets/classes/bard.png" id="2_pwuy6"]
+
+[node name="Bard" type="Node"]
+script = ExtResource("1_svs16")
+description = "Bardo"
+texture = ExtResource("2_pwuy6")
+metadata/_custom_type_script = "uid://ctfp76jx6phh"

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://12fk06h1mpy6"]
+
+[ext_resource type="Script" uid="uid://dmygna8afyrxh" path="res://scenes/classes/illusionist.gd" id="1_k6tdo"]
+[ext_resource type="Texture2D" uid="uid://bayib65llb0m1" path="res://assets/classes/illusionist.png" id="2_vql3q"]
+
+[node name="Illusionist" type="Node"]
+script = ExtResource("1_k6tdo")
+description = "Ilusionista"
+texture = ExtResource("2_vql3q")
+metadata/_custom_type_script = "uid://ctfp76jx6phh"

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ccmbp5tl1tr1l"]
 
 [ext_resource type="Script" uid="uid://sl7v7ly8mt8o" path="res://scenes/classes/archer.gd" id="1_pf2sk"]
-[ext_resource type="Texture2D" uid="uid://62bb23m35ugy" path="res://assets/Classes/archer.png" id="2_lynbx"]
+[ext_resource type="Texture2D" uid="uid://62bb23m35ugy" path="res://assets/classes/archer.png" id="2_lynbx"]
 
 [node name="Archer" type="Node"]
 script = ExtResource("1_pf2sk")

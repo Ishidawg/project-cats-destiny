@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gv0ojeer8hfx"
-path="res://.godot/imported/lunar_witch.png-05a0bb63b5aaa3dedae56108511daf0e.ctex"
+uid="uid://dx3nbb4roy071"
+path="res://.godot/imported/hemomancer.png-a642124137e4280ff64a0394a725338f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/lunar_witch.png"
-dest_files=["res://.godot/imported/lunar_witch.png-05a0bb63b5aaa3dedae56108511daf0e.ctex"]
+source_file="res://assets/classes/hemomancer.png"
+dest_files=["res://.godot/imported/hemomancer.png-a642124137e4280ff64a0394a725338f.ctex"]
 
 [params]
 

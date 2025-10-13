@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd5osdpdem25q"]
+
+[ext_resource type="Script" uid="uid://c1un6ad1iw0id" path="res://scenes/classes/gunslinger.gd" id="1_pmk5t"]
+[ext_resource type="Texture2D" uid="uid://dw5hwo4ilixr4" path="res://assets/classes/gunslinger.png" id="2_72t0l"]
+
+[node name="Gunslinger" type="Node"]
+script = ExtResource("1_pmk5t")
+description = "Atirador"
+texture = ExtResource("2_72t0l")
+metadata/_custom_type_script = "uid://ctfp76jx6phh"

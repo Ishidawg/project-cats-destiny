@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gv0ojeer8hfx"
-path="res://.godot/imported/lunar_witch.png-05a0bb63b5aaa3dedae56108511daf0e.ctex"
+uid="uid://bayib65llb0m1"
+path="res://.godot/imported/illusionist.png-fae5ad59e06c9c0943e8ddc586f0c6b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/lunar_witch.png"
-dest_files=["res://.godot/imported/lunar_witch.png-05a0bb63b5aaa3dedae56108511daf0e.ctex"]
+source_file="res://assets/classes/illusionist.png"
+dest_files=["res://.godot/imported/illusionist.png-fae5ad59e06c9c0943e8ddc586f0c6b9.ctex"]
 
 [params]
 

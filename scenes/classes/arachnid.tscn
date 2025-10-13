@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://d30yi00lhmqhu"]
+
+[ext_resource type="Script" uid="uid://bxct46sak0nv0" path="res://scenes/classes/arachnid.gd" id="1_jfk34"]
+[ext_resource type="Texture2D" uid="uid://pqefqqojmi84" path="res://assets/classes/arachnid.png" id="2_mham0"]
+
+[node name="Arachnid" type="Node"]
+script = ExtResource("1_jfk34")
+description = "Aracnídeo"
+texture = ExtResource("2_mham0")
+metadata/_custom_type_script = "uid://ctfp76jx6phh"

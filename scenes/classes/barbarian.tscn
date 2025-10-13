@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://fcn2d3g317j3"]
+
+[ext_resource type="Script" uid="uid://bj1ku38158wdj" path="res://scenes/classes/barbarian.gd" id="1_3mu7i"]
+[ext_resource type="Texture2D" uid="uid://c27w1mpqb2gfc" path="res://assets/classes/barbarian.png" id="2_3mu7i"]
+
+[node name="Barbarian" type="Node"]
+script = ExtResource("1_3mu7i")
+description = "Bárbaro"
+texture = ExtResource("2_3mu7i")
+metadata/_custom_type_script = "uid://ctfp76jx6phh"

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjbea5i8w5iek"]
+
+[ext_resource type="Script" uid="uid://bup015356rvlq" path="res://scenes/classes/botanic.gd" id="1_mrn1f"]
+[ext_resource type="Texture2D" uid="uid://dh3f0ku5tcxty" path="res://assets/classes/botanic.png" id="2_8h1oe"]
+
+[node name="Botanic" type="Node"]
+script = ExtResource("1_mrn1f")
+description = "Botanista"
+texture = ExtResource("2_8h1oe")
+metadata/_custom_type_script = "uid://ctfp76jx6phh"

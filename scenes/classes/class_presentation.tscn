@@ -1,12 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://bp31r5gqoqgre"]
 
 [ext_resource type="Script" uid="uid://dywj5dn4esagv" path="res://scenes/classes/class_presentation.gd" id="1_3uusj"]
-[ext_resource type="Texture2D" uid="uid://gv0ojeer8hfx" path="res://assets/Classes/lunar_witch.png" id="1_sr0tj"]
-[ext_resource type="Texture2D" uid="uid://ogifjtewnoxb" path="res://assets/Classes/background.png" id="2_gpjbw"]
+[ext_resource type="Texture2D" uid="uid://gv0ojeer8hfx" path="res://assets/classes/lunar_witch.png" id="1_sr0tj"]
+[ext_resource type="Texture2D" uid="uid://ogifjtewnoxb" path="res://assets/classes/background.png" id="2_gpjbw"]
 
 [node name="ClassPresentation" type="Control"]
 z_index = 10
 layout_mode = 3
+anchors_preset = 0
 offset_left = 281.0
 offset_top = 137.0
 offset_right = 911.14404

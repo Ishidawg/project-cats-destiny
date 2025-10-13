@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dysr67p7o6lby"]
+
+[ext_resource type="Script" uid="uid://clyfls2sckmfe" path="res://scenes/classes/love_witch.gd" id="1_hpdyg"]
+[ext_resource type="Texture2D" uid="uid://dwo653yhcor5h" path="res://assets/classes/love_witch.png" id="2_d4r1m"]
+
+[node name="LoveWitch" type="Node"]
+script = ExtResource("1_hpdyg")
+description = "Bruxinha do Amor"
+texture = ExtResource("2_d4r1m")
+metadata/_custom_type_script = "uid://ctfp76jx6phh"
