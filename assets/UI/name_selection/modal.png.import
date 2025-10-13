@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ogifjtewnoxb"
-path="res://.godot/imported/background.png-34128605e09388706f8642785aa791cc.ctex"
+uid="uid://cdd87fkh7i00c"
+path="res://.godot/imported/modal.png-3f55c2587475e8c3a7690897adda9e4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Classes/background.png"
-dest_files=["res://.godot/imported/background.png-34128605e09388706f8642785aa791cc.ctex"]
+source_file="res://assets/UI/name_selection/modal.png"
+dest_files=["res://.godot/imported/modal.png-3f55c2587475e8c3a7690897adda9e4f.ctex"]
 
 [params]
 

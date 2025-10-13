@@ -15,5 +15,5 @@ func select():
 	self.queue_free()
 	return
 
-func _on_btn_ok_pressed() -> void:
+func _on_confirm_button_pressed() -> void:
 	PA.emit()
