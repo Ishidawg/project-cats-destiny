@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://cq5b85105alfc"]
+
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_7e0ei"]
+[ext_resource type="Texture2D" uid="uid://cx1t5myq4ttrq" path="res://assets/potions/death_potion.png" id="2_ucx1j"]
+
+[resource]
+script = ExtResource("1_7e0ei")
+id = 11
+name = "Death Potion"
+texture = ExtResource("2_ucx1j")
+metadata/_custom_type_script = "uid://dkx6udi2qr4k3"

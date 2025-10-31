@@ -33,6 +33,7 @@ anti_aliasing = false
 [node name="NameSelection" type="Control"]
 z_index = 4
 layout_mode = 3
+anchors_preset = 0
 offset_left = 640.0
 offset_top = 360.0
 offset_right = 640.0

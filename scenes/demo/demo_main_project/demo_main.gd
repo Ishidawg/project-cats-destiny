@@ -23,20 +23,46 @@ enum Id {
 	PINK = 8,
 	PURPLE = 9,
 	RED = 10,
-	YELLOW = 11
+	YELLOW = 11, 
+	
+	LOVE = 0,
+	CLAIRVOYANCE = 1,
+	SERENITY = 2,
+	LIFE = 3,
+	HAPPINESS = 4,
+	HARMONY = 5,
+	PAIN = 6,
+	CONFUSION = 7,
+	MANIPULATION = 8,
+	TORTURE = 9,
+	REGRET = 10,
+	DEATH = 11
+	# Amor
+	# Clarividência
+	# Serenidade
+	# Vida
+	# Alegria
+	# Harmonia
+	# Dor 
+	# Confusão
+	# Manipulação 
+	# Tortura
+	# Arrependimento
+	# Morte
 }
 
 var classes_dictionary = {
-	[Id.PINK, Id.PURPLE, Id.LIGHT_RED] : love_witch_scene,
-	[Id.LIME, Id.DARK_BLUE, Id.YELLOW] : barbarian_scene,
-	[Id.RED, Id.ORANGE, Id.DARK_BLUE]  : gunslinger_scene,
-	[Id.GREY, Id.LIGHT_RED,Id.LILAC]   : lunar_witch_scene,
-	[Id.RED, Id.LIGHT_RED, Id.GREY]    : hemomancer_scene,
-	[Id.LIME, Id.ORANGE, Id.YELLOW]    : bard_scene,
-	[Id.BLUE, Id.GREEN, Id.YELLOW]     : archer_scene,
-	[Id.GREEN, Id.PINK, Id.LILAC]      : botanic_scene,
-	[Id.PINK, Id.PURPLE, Id.BLUE]      : illusionist_scene,
-	[Id.RED, Id.GREY, Id.PURPLE]       : arachnid_scene,
+	[Id.MANIPULATION, Id.LIFE, Id.HARMONY]      : botanic_scene,
+	[Id.LIFE, Id.SERENITY, Id.CLAIRVOYANCE]     : lunar_witch_scene,
+	[Id.LOVE, Id.HAPPINESS, Id.LIFE]            : love_witch_scene,
+	[Id.REGRET, Id.DEATH, Id.CONFUSION]         : arachnid_scene,
+	[Id.DEATH, Id.PAIN, Id.TORTURE]             : hemomancer_scene,
+	[Id.HAPPINESS, Id.MANIPULATION, Id.HARMONY] : bard_scene,
+	[Id.MANIPULATION, Id.CONFUSION, Id.REGRET]  : illusionist_scene,
+	[Id.HAPPINESS, Id.TORTURE, Id.LOVE]         : barbarian_scene,
+	[Id.REGRET, Id.PAIN, Id.SERENITY]           : gunslinger_scene,
+	[Id.CLAIRVOYANCE, Id.HARMONY, Id.SERENITY]  : archer_scene,
+
 }
 
 var class_presentation_scene = preload("res://scenes/classes/class_presentation.tscn")

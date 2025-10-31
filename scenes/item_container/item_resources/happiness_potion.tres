@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://lpswpmjrqaac"]
+
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_fvbur"]
+[ext_resource type="Texture2D" uid="uid://bubqf30rbfjen" path="res://assets/potions/happiness_potion.png" id="2_w7x4q"]
+
+[resource]
+script = ExtResource("1_fvbur")
+id = 4
+name = "Happiness Potion"
+texture = ExtResource("2_w7x4q")
+metadata/_custom_type_script = "uid://dkx6udi2qr4k3"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://d3jyqxltq0nrs"]
+
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_6fay3"]
+[ext_resource type="Texture2D" uid="uid://dismc33duxumg" path="res://assets/potions/confusion_potion.png" id="2_teyco"]
+
+[resource]
+script = ExtResource("1_6fay3")
+id = 7
+name = "Confusion Potion"
+texture = ExtResource("2_teyco")
+metadata/_custom_type_script = "uid://dkx6udi2qr4k3"

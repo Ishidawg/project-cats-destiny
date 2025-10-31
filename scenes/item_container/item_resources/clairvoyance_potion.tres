@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://jejs1dclfuvn"]
+
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_kavs4"]
+[ext_resource type="Texture2D" uid="uid://dbjvq47mqobvt" path="res://assets/potions/clairvoyance_potion.png" id="2_sc865"]
+
+[resource]
+script = ExtResource("1_kavs4")
+id = 1
+name = "Clairvoyance Potion"
+texture = ExtResource("2_sc865")
+metadata/_custom_type_script = "uid://dkx6udi2qr4k3"

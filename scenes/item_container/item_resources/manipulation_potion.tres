@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dcb0883v6nyyg"]
+
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_1df6q"]
+[ext_resource type="Texture2D" uid="uid://cqjirmftky7c" path="res://assets/potions/manipulation_potion.png" id="2_184b1"]
+
+[resource]
+script = ExtResource("1_1df6q")
+id = 8
+name = "Manipulation Potion"
+texture = ExtResource("2_184b1")
+metadata/_custom_type_script = "uid://dkx6udi2qr4k3"

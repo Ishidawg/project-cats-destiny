@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://d07igp67oyxex"]
+
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_whtmw"]
+[ext_resource type="Texture2D" uid="uid://dinn3eywcu507" path="res://assets/potions/life_potion.png" id="2_iwx8d"]
+
+[resource]
+script = ExtResource("1_whtmw")
+id = 3
+name = "Life Potion"
+texture = ExtResource("2_iwx8d")
+metadata/_custom_type_script = "uid://dkx6udi2qr4k3"

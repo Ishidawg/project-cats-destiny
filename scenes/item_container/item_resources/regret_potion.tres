@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dys0d0baqmbs2"]
+
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_2wvd0"]
+[ext_resource type="Texture2D" uid="uid://d1h0q7cjnygsj" path="res://assets/potions/regret_potion.png" id="2_x2i5a"]
+
+[resource]
+script = ExtResource("1_2wvd0")
+id = 10
+name = "Regret Potion"
+texture = ExtResource("2_x2i5a")
+metadata/_custom_type_script = "uid://dkx6udi2qr4k3"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bdgcrr2vb8jfj"]
+
+[ext_resource type="Script" uid="uid://dkx6udi2qr4k3" path="res://scenes/item_container/components/item.gd" id="1_mi7fu"]
+[ext_resource type="Texture2D" uid="uid://bojuk23uowa2f" path="res://assets/potions/pain_potion.png" id="2_rbjj8"]
+
+[resource]
+script = ExtResource("1_mi7fu")
+id = 6
+name = "Pain Potion"
+texture = ExtResource("2_rbjj8")
+metadata/_custom_type_script = "uid://dkx6udi2qr4k3"
