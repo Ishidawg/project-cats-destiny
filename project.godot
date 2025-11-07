@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.5", "Forward Plus")
 [autoload]
 
 SignalDisplayDialogue="*res://global_scripts/signal_display_dialogue.gd"
+ClassesDictionary="*res://global_scripts/classes_dictionary.gd"
 
 [display]
 
