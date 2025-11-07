@@ -12,14 +12,14 @@ func _on_cauldron_full(cauldron: Cauldron) -> void:
 	
 	var classe: Classe = ClassesDictionary.map[cauldron.items].instantiate()
 	
+	# Exibe a apresentação da classe
 	var class_presentation: ClassPresentation = class_presentation_scene.instantiate()
 	add_child(class_presentation)
 	class_presentation.load(classe)
 	await get_tree().create_timer(3).timeout
-	# EXIBE A TELA MEIO PAH
-	
 	class_presentation.free()
 	
+	# EXIBE A TELA MEIO PAH
 	var name_selection: NameSelection = name_selection_scene.instantiate()
 	add_child(name_selection)
 	await name_selection.select() # Espera inserir o nome
