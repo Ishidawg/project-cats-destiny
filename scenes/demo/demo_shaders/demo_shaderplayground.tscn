@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://dslfl24w7uby6"]
+
+[ext_resource type="Texture2D" uid="uid://box58uk3ksxrg" path="res://assets/Background/demo_background.png" id="1_0rloc"]
+[ext_resource type="Shader" uid="uid://o1xn8a23muh3" path="res://scenes/demo/demo_shaders/under_water.gdshader" id="2_7voln"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_0rloc"]
+noise_type = 3
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_7voln"]
+noise = SubResource("FastNoiseLite_0rloc")
+seamless = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7voln"]
+shader = ExtResource("2_7voln")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_7voln")
+
+[node name="DemoShaderPlayground" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(0.99999994, 1)
+position_smoothing_enabled = true
+position_smoothing_speed = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-43.221718, -0.07757913)
+scale = Vector2(0.91119623, 0.911196)
+texture = ExtResource("1_0rloc")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_7voln")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
