@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://daof7codtcofn"]
 
 [ext_resource type="Script" uid="uid://dxx1pfs41d76g" path="res://scenes/item_container/components/cauldron.gd" id="1_vgvr5"]
-[ext_resource type="Texture2D" uid="uid://4mqnsoty0mix" path="res://assets/cintia_assets/caldeirao1.png" id="3_uag6h"]
-[ext_resource type="Texture2D" uid="uid://bu4g1037kcf2a" path="res://assets/cintia_assets/caldeirao2.png" id="4_q8v3i"]
+[ext_resource type="Texture2D" uid="uid://4mqnsoty0mix" path="res://assets/potion_selection_assets/caldeirao1.png" id="3_uag6h"]
+[ext_resource type="Texture2D" uid="uid://bu4g1037kcf2a" path="res://assets/potion_selection_assets/caldeirao2.png" id="4_q8v3i"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_h8b0d"]
 animations = [{

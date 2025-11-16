@@ -6,7 +6,7 @@ signal cauldron_full(cauldron: Cauldron)
 
 var is_open: bool = false
 
-@onready var item_container: ItemContainer = preload("uid://bq7w3phpr0jbk")
+@onready var item_container: ItemContainer = preload("res://scenes/item_container/item_container.tres")
 @onready var item_stack_gui_class = preload("uid://c3q6issa4hxia")
 @onready var slots: Array = $NinePatchRect/GridContainer.get_children()
 @onready var cauldron: Cauldron = $Cauldron

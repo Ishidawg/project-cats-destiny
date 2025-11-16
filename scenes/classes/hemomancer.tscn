@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c8hscqwy4uixy"]
 
-[ext_resource type="Script" uid="uid://dpq6ryhaia55u" path="res://hemomancer.gd" id="1_4at1s"]
+[ext_resource type="Script" uid="uid://dpq6ryhaia55u" path="res://scenes/classes/hemomancer.gd" id="1_4at1s"]
 [ext_resource type="Texture2D" uid="uid://dx3nbb4roy071" path="res://assets/classes/hemomancer.png" id="2_wnfbg"]
 
 [node name="Hemomancer" type="Node"]

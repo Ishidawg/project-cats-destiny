@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://6k3xfdbtsw8i"]
 
-[ext_resource type="Texture2D" uid="uid://cpo1rg37dfngy" path="res://assets/cintia_assets/main_menu/background.png" id="1_0ebjn"]
+[ext_resource type="Texture2D" uid="uid://cpo1rg37dfngy" path="res://assets/main_menu/background.png" id="1_0ebjn"]
 [ext_resource type="Script" uid="uid://blim6llfuptfy" path="res://scenes/main_menu/main_menu.gd" id="1_ob46e"]
 [ext_resource type="FontFile" uid="uid://bayl34n5s6ic7" path="res://fonts/dungeon-mode.ttf" id="2_ob46e"]
 [ext_resource type="PackedScene" uid="uid://6ndtlmtwcxyc" path="res://scenes/post_processing_effects/crt_effect.tscn" id="3_ob46e"]
