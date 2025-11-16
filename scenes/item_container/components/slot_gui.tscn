@@ -5,21 +5,22 @@
 
 [node name="Slot" type="Button"]
 self_modulate = Color(1, 1, 1, 0)
-custom_minimum_size = Vector2(40, 40)
-offset_right = 40.0
-offset_bottom = 40.0
+custom_minimum_size = Vector2(32, 32)
+offset_right = 32.0
+offset_bottom = 32.0
 scale = Vector2(1.2, 1.2)
 script = ExtResource("1_i74gw")
 
 [node name="Background" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(0, 3.8146973e-06)
-scale = Vector2(0.41666666, 0.43956038)
+scale = Vector2(0.3298611, 0.34798533)
 texture = ExtResource("1_jm88w")
 centered = false
 vframes = 2
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-custom_minimum_size = Vector2(40, 40)
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 32.0
+offset_bottom = 32.0

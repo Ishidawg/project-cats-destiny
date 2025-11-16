@@ -6,4 +6,3 @@
 script = ExtResource("1_8yfiu")
 
 [node name="Item" type="Sprite2D" parent="."]
-scale = Vector2(0.65, 0.65)

@@ -11,15 +11,15 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -882.0
-offset_bottom = -475.0
+offset_right = -1010.0
+offset_bottom = -537.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_p8kuv")
 
 [node name="Cauldron" parent="." instance=ExtResource("2_60eon")]
 visibility_layer = 1
-position = Vector2(138, 243)
+position = Vector2(349, 140)
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
@@ -39,13 +39,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -91.5
-offset_top = -74.0
-offset_right = 80.5
-offset_bottom = 55.629623
+offset_left = -80.5
+offset_top = -62.0
+offset_right = 83.5
+offset_bottom = 74.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(1.08, 1.08)
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 16
 columns = 4
 
 [node name="Slot" parent="NinePatchRect/GridContainer" instance=ExtResource("4_tmuyn")]
