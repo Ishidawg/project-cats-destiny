@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://d0b4p5l08lhvp"]
+[gd_scene load_steps=13 format=3 uid="uid://d0b4p5l08lhvp"]
 
 [ext_resource type="Texture2D" uid="uid://dblrp1q68fr4j" path="res://assets/UI/Background.png" id="1_0ebjn"]
 [ext_resource type="Texture2D" uid="uid://ceayyfjxcc7dt" path="res://assets/UI/Metal Buttons Text.png" id="1_fsom3"]
 [ext_resource type="Script" uid="uid://c1t6066ren81" path="res://scenes/demo/demo_menu/main_menu.gd" id="1_ob46e"]
+[ext_resource type="Texture2D" uid="uid://ejq2t2on34c8" path="res://assets/UI/Metal Buttons Icons.png" id="4_lyxv2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ob46e"]
 texture = ExtResource("1_0ebjn")
@@ -32,6 +33,10 @@ region = Rect2(129, 193, 61, 30)
 atlas = ExtResource("1_fsom3")
 region = Rect2(65, 193, 62, 30)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_02gyw"]
+atlas = ExtResource("4_lyxv2")
+region = Rect2(289, 33, 30, 30)
+
 [node name="main_menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -58,9 +63,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -4.0
-offset_top = -10.0
+offset_top = -160.0
 offset_right = 4.0
-offset_bottom = 10.0
+offset_bottom = -72.00012
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(4, 4)
@@ -111,5 +116,36 @@ texture_normal = SubResource("AtlasTexture_ob46e")
 texture_pressed = SubResource("AtlasTexture_uqeha")
 texture_hover = SubResource("AtlasTexture_3ovsr")
 
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -130.0
+offset_top = -100.0
+offset_right = -122.0
+offset_bottom = -92.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Options" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+flat = true
+
+[node name="optionButtonTexture" type="TextureButton" parent="HBoxContainer/Options"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+texture_normal = SubResource("AtlasTexture_02gyw")
+
 [connection signal="pressed" from="VBoxContainer/play/playTextureButton" to="." method="_on_play_texture_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit/quitTextureButton" to="." method="_on_quit_texture_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Options/optionButtonTexture" to="." method="_on_option_button_texture_pressed"]

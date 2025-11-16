@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://6ndtlmtwcxyc"]
+
+[ext_resource type="Shader" uid="uid://b7oocd1dk4yb1" path="res://scenes/post_processing_effects/crt_effect.gdshader" id="1_n807c"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_alafw"]
+shader = ExtResource("1_n807c")
+
+[node name="CrtEffect" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_alafw")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
