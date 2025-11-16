@@ -23,6 +23,7 @@ ClassesDictionary="*res://global_scripts/classes_dictionary.gd"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/mode=3
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 

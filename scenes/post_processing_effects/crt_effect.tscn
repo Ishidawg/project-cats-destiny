@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://6ndtlmtwcxyc"]
+[gd_scene load_steps=4 format=3 uid="uid://6ndtlmtwcxyc"]
 
+[ext_resource type="Script" uid="uid://gi2jg5emml3f" path="res://scenes/post_processing_effects/crt_effect.gd" id="1_2865m"]
 [ext_resource type="Shader" uid="uid://b7oocd1dk4yb1" path="res://scenes/post_processing_effects/crt_effect.gdshader" id="1_n807c"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_alafw"]
@@ -8,8 +9,10 @@ shader = ExtResource("1_n807c")
 [node name="CrtEffect" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_2865m")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+physics_interpolation_mode = 2
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 material = SubResource("ShaderMaterial_alafw")
@@ -18,3 +21,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="toggle_crt" from="." to="." method="_on_toggle_crt"]

@@ -9,11 +9,8 @@ uniform sampler2D noise_texture:repeat_enable;
 
 void fragment() {
 	// vec3 is used for a point in 3d space with x, y and z values, but in this case I'm usin to store red, green and blue values.
-	vec3 noise_color = texture(noise_texture, SCREEN_UV + (TIME / 10.0)).rgb;
+	vec3 noise_color = texture(noise_texture, SCREEN_UV + (TIME / 20.0)).rgb;
 	vec3 color = texture(screen_texture, SCREEN_UV + noise_color.b /20.0).rgb;
-	noise_color.b = 0.8;
-	noise_color.g = 0.4;
-	color.r = 0.0;
 
 	COLOR.rgb = color;
 }
