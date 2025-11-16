@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gv0ojeer8hfx"
-path="res://.godot/imported/lunar_witch.png-05a0bb63b5aaa3dedae56108511daf0e.ctex"
+uid="uid://cx4m3383l7o42"
+path="res://.godot/imported/potion11.png-2ecb4f5a8829c4b15e611f6d2dc6c89c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/lunar_witch.png"
-dest_files=["res://.godot/imported/lunar_witch.png-05a0bb63b5aaa3dedae56108511daf0e.ctex"]
+source_file="res://assets/cintia_assets/potions/potion11.png"
+dest_files=["res://.godot/imported/potion11.png-2ecb4f5a8829c4b15e611f6d2dc6c89c.ctex"]
 
 [params]
 

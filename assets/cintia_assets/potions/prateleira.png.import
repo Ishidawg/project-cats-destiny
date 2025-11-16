@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gv0ojeer8hfx"
-path="res://.godot/imported/lunar_witch.png-05a0bb63b5aaa3dedae56108511daf0e.ctex"
+uid="uid://d3rn12fmc5jg8"
+path="res://.godot/imported/prateleira.png-609b55143f95384fdb7e961517c510dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/lunar_witch.png"
-dest_files=["res://.godot/imported/lunar_witch.png-05a0bb63b5aaa3dedae56108511daf0e.ctex"]
+source_file="res://assets/cintia_assets/potions/prateleira.png"
+dest_files=["res://.godot/imported/prateleira.png-609b55143f95384fdb7e961517c510dd.ctex"]
 
 [params]
 
