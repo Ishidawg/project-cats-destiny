@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh3f0ku5tcxty"
-path="res://.godot/imported/botanic.png-34fd8f3b4820f685d0d35b6f2a8930f3.ctex"
+path="res://.godot/imported/botanic.png-6d4f5786bb181bffb20c089adc17fe2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/botanic.png"
-dest_files=["res://.godot/imported/botanic.png-34fd8f3b4820f685d0d35b6f2a8930f3.ctex"]
+source_file="res://assets/Classes/botanic.png"
+dest_files=["res://.godot/imported/botanic.png-6d4f5786bb181bffb20c089adc17fe2f.ctex"]
 
 [params]
 

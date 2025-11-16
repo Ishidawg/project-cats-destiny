@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pqefqqojmi84"
-path="res://.godot/imported/arachnid.png-97f494db223f5f2a2cbe0311a49a0fd0.ctex"
+path="res://.godot/imported/arachnid.png-8698a9beb42814cfff62ff90a8d404ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/arachnid.png"
-dest_files=["res://.godot/imported/arachnid.png-97f494db223f5f2a2cbe0311a49a0fd0.ctex"]
+source_file="res://assets/Classes/arachnid.png"
+dest_files=["res://.godot/imported/arachnid.png-8698a9beb42814cfff62ff90a8d404ef.ctex"]
 
 [params]
 

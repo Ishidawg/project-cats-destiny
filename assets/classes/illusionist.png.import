@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bayib65llb0m1"
-path="res://.godot/imported/illusionist.png-fae5ad59e06c9c0943e8ddc586f0c6b9.ctex"
+path="res://.godot/imported/illusionist.png-b9881d55f9d6ddad23efbf6cf20c53e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/illusionist.png"
-dest_files=["res://.godot/imported/illusionist.png-fae5ad59e06c9c0943e8ddc586f0c6b9.ctex"]
+source_file="res://assets/Classes/illusionist.png"
+dest_files=["res://.godot/imported/illusionist.png-b9881d55f9d6ddad23efbf6cf20c53e3.ctex"]
 
 [params]
 

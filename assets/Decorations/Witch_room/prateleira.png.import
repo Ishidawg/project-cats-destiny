@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq1sp42ykq4xx"
-path="res://.godot/imported/potion3.png-c3f256171071e5f85e7f9a557b9b06ee.ctex"
+uid="uid://d3rn12fmc5jg8"
+path="res://.godot/imported/prateleira.png-ebba21ebc5160d97999d29f85a7a610b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cintia_assets/potions/potion3.png"
-dest_files=["res://.godot/imported/potion3.png-c3f256171071e5f85e7f9a557b9b06ee.ctex"]
+source_file="res://assets/Decorations/Witch_room/prateleira.png"
+dest_files=["res://.godot/imported/prateleira.png-ebba21ebc5160d97999d29f85a7a610b.ctex"]
 
 [params]
 
