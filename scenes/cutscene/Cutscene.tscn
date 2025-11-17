@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://craphrr5whgly"]
+[gd_scene load_steps=34 format=3 uid="uid://craphrr5whgly"]
 
 [ext_resource type="Texture2D" uid="uid://dxcwuy4fabsep" path="res://assets/cutscene/tv.png" id="1_837in"]
 [ext_resource type="Shader" uid="uid://bcquya0xwlux7" path="res://scenes/post_processing_effects/startfield.gdshader" id="1_tulu6"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://dukt6k61glsif" path="res://assets/cutscene/tv_off/tvligando06.png" id="15_kgh2o"]
 [ext_resource type="Texture2D" uid="uid://cnj347kcklhmj" path="res://assets/cutscene/tv_on/tvligando7.png" id="15_pdrt8"]
 [ext_resource type="Texture2D" uid="uid://1jvrrb71pkb6" path="res://assets/cutscene/tv_off/tvligando07.png" id="22_rny2k"]
+[ext_resource type="Shader" uid="uid://b7oocd1dk4yb1" path="res://scenes/post_processing_effects/crt_effect.gdshader" id="25_o6kn1"]
 [ext_resource type="AudioStream" uid="uid://ca6tv1pe0ylf0" path="res://sfx/tv/turning_on.ogg" id="26_aj15y"]
 
 [sub_resource type="Animation" id="Animation_i4xmo"]
@@ -273,6 +274,9 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_apxrj"]
+shader = ExtResource("25_o6kn1")
+
 [node name="Cutscene" type="Node"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -353,9 +357,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -621.5
-offset_top = -118.0
+offset_top = -140.0
 offset_right = 621.5
-offset_bottom = -8.0
+offset_bottom = -30.0
 grow_horizontal = 2
 grow_vertical = 0
 focus_mode = 2
@@ -366,6 +370,16 @@ text = "[wave amp=50.0 freq=5.0 connected=1]O Sol proclamará[/wave]"
 horizontal_alignment = 1
 vertical_alignment = 1
 selection_enabled = true
+
+[node name="crt_workaround" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_apxrj")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="cutscene_ost" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_g3bln")
