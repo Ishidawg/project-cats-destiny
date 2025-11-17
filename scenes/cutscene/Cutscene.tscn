@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://craphrr5whgly"]
+[gd_scene load_steps=32 format=3 uid="uid://craphrr5whgly"]
 
 [ext_resource type="Texture2D" uid="uid://dxcwuy4fabsep" path="res://assets/cutscene/tv.png" id="1_837in"]
 [ext_resource type="Shader" uid="uid://bcquya0xwlux7" path="res://scenes/post_processing_effects/startfield.gdshader" id="1_tulu6"]
@@ -10,47 +10,22 @@
 [ext_resource type="Texture2D" uid="uid://dg3u12xeg77rk" path="res://assets/cutscene/cutscene5.png" id="5_mxxg0"]
 [ext_resource type="Texture2D" uid="uid://bjx13rtuoyyqu" path="res://assets/cutscene/cutscene6.png" id="6_dtlxr"]
 [ext_resource type="Texture2D" uid="uid://bd23v8h5hycms" path="res://assets/cutscene/cutscene7.png" id="7_woitd"]
-
-[sub_resource type="Animation" id="Animation_837in"]
-resource_name = "cutscene"
-length = 20.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CanvasLayer/text:text")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 3, 6, 9, 12, 15, 18),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": ["[wave amp=50.0 freq=5.0 connected=1]O Sol proclamará[/wave]", "[wave amp=50.0 freq=5.0 connected=1]A Lua irá fugir[/wave]", "[wave amp=50.0 freq=5.0 connected=1]A terra vai queimar[/wave]", "[wave amp=50.0 freq=5.0 connected=1]As almas irão fugir pra outro lugar[/wave]", "[wave amp=50.0 freq=5.0 connected=1]Os deuses procurarão por seus filhos antes abandonados[/wave]", "[wave amp=50.0 freq=5.0 connected=1]As bruxas vão descansar na Lua[/wave]", "[wave amp=50.0 freq=5.0 connected=1]Aguardando a sua invocação
-[/wave]"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("CanvasLayer/images:texture")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 3, 6, 9, 12, 15, 18),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("2_6ri26"), ExtResource("2_8prnn"), ExtResource("3_27chg"), ExtResource("4_g3bln"), ExtResource("5_mxxg0"), ExtResource("6_dtlxr"), ExtResource("7_woitd")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("CanvasLayer/fadeInFadeOut:color")
-tracks/2/interp = 2
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.25, 2.75, 3, 3.25, 5.75, 6, 6.25, 8.75, 9, 9.25, 11.75, 12, 12.25, 14.75, 15, 15.25, 17.75, 18, 18.25),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
-}
+[ext_resource type="Texture2D" uid="uid://dut5ydbnf4iu4" path="res://assets/cutscene/tv_on/tvligando1.png" id="9_6xtvj"]
+[ext_resource type="Texture2D" uid="uid://q0yasv3nifi6" path="res://assets/cutscene/tv_off/tvligando01.png" id="10_aj15y"]
+[ext_resource type="Texture2D" uid="uid://by77gk31hvyy0" path="res://assets/cutscene/tv_on/tvligando2.png" id="10_xueci"]
+[ext_resource type="Texture2D" uid="uid://bocf6sj05g5au" path="res://assets/cutscene/tv_on/tvligando3.png" id="11_cxmhb"]
+[ext_resource type="AudioStream" uid="uid://c2vemrfsbu70k" path="res://soundtrack/Contract Demons OST/03 play together (cutscene).ogg" id="11_g3bln"]
+[ext_resource type="Texture2D" uid="uid://bvhhrc115w4h" path="res://assets/cutscene/tv_off/tvligando02.png" id="11_o6kn1"]
+[ext_resource type="Texture2D" uid="uid://spt5b2bbko3s" path="res://assets/cutscene/tv_off/tvligando03.png" id="12_apxrj"]
+[ext_resource type="Texture2D" uid="uid://bexp5hs6j3ge2" path="res://assets/cutscene/tv_on/tvligando4.png" id="12_b7auo"]
+[ext_resource type="Texture2D" uid="uid://y25au1rtqe2l" path="res://assets/cutscene/tv_on/tvligando5.png" id="13_02r7d"]
+[ext_resource type="Texture2D" uid="uid://bj1v40sp4qgg3" path="res://assets/cutscene/tv_off/tvligando04.png" id="13_amffs"]
+[ext_resource type="Texture2D" uid="uid://s4gr53dyny3k" path="res://assets/cutscene/tv_on/tvligando6.png" id="14_rr5gk"]
+[ext_resource type="Texture2D" uid="uid://rt7ik42xlugc" path="res://assets/cutscene/tv_off/tvligando05.png" id="14_wejph"]
+[ext_resource type="Texture2D" uid="uid://dukt6k61glsif" path="res://assets/cutscene/tv_off/tvligando06.png" id="15_kgh2o"]
+[ext_resource type="Texture2D" uid="uid://cnj347kcklhmj" path="res://assets/cutscene/tv_on/tvligando7.png" id="15_pdrt8"]
+[ext_resource type="Texture2D" uid="uid://1jvrrb71pkb6" path="res://assets/cutscene/tv_off/tvligando07.png" id="22_rny2k"]
+[ext_resource type="AudioStream" uid="uid://ca6tv1pe0ylf0" path="res://sfx/tv/turning_on.ogg" id="26_aj15y"]
 
 [sub_resource type="Animation" id="Animation_i4xmo"]
 length = 0.001
@@ -90,6 +65,143 @@ tracks/2/keys = {
 "update": 0,
 "values": [Color(0, 0, 0, 1)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/tv_turning_animation:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"on_off"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/tv_turning_animation:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("tv_sfx:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("cutscene_ost:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_837in"]
+resource_name = "cutscene"
+length = 40.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/text:text")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.8, 3.8000002, 6.8, 9.799999, 12.799999, 15.799999, 18.799997),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["[wave amp=50.0 freq=5.0 connected=1]O Sol proclamará[/wave]", "[wave amp=50.0 freq=5.0 connected=1]A Lua irá fugir[/wave]", "[wave amp=50.0 freq=5.0 connected=1]A terra vai queimar[/wave]", "[wave amp=50.0 freq=5.0 connected=1]As almas irão fugir pra outro lugar[/wave]", "[wave amp=50.0 freq=5.0 connected=1]Os deuses procurarão por seus filhos antes abandonados[/wave]", "[wave amp=50.0 freq=5.0 connected=1]As bruxas vão descansar na Lua[/wave]", "[wave amp=50.0 freq=5.0 connected=1]Aguardando a sua invocação
+[/wave]"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/images:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.8, 3.8000002, 6.8, 9.799999, 12.799999, 15.799999, 18.799997),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_6ri26"), ExtResource("2_8prnn"), ExtResource("3_27chg"), ExtResource("4_g3bln"), ExtResource("5_mxxg0"), ExtResource("6_dtlxr"), ExtResource("7_woitd")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/fadeInFadeOut:color")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.8, 1.05, 3.5500002, 3.8000002, 4.05, 6.55, 6.8, 7.05, 9.549999, 9.799999, 10.049999, 12.549999, 12.799999, 13.049999, 15.549999, 15.799999, 16.05, 18.549997, 18.799997, 19.049997),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/tv_turning_animation:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.4),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"on_off"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/tv_turning_animation:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.4, 0.5, 0.6, 0.70000005, 0.8, 0.9, 23.4, 23.5, 23.6, 23.699999, 23.8, 23.904627, 24, 24.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10, 11, 12, 13]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("tv_sfx:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.14996168),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("cutscene_ost:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_i4xmo"]
 _data = {
@@ -110,6 +222,56 @@ shader_parameter/far_stars_color = Color(0.5, 0, 1, 1)
 shader_parameter/near_stars_color = Color(1, 1, 1, 1)
 shader_parameter/base_scroll_speed = 0.05
 shader_parameter/additional_scroll_speed = 0.05
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rny2k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_6xtvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xueci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cxmhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_b7auo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_02r7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rr5gk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pdrt8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_aj15y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_o6kn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_apxrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_amffs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_wejph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_kgh2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_rny2k")
+}],
+"loop": false,
+"name": &"on_off",
+"speed": 8.0
+}]
 
 [node name="Cutscene" type="Node"]
 
@@ -160,6 +322,12 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
+[node name="tv_turning_animation" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(642, 306)
+scale = Vector2(4.0833335, 4.0833335)
+sprite_frames = SubResource("SpriteFrames_rny2k")
+animation = &"on_off"
+
 [node name="television" type="TextureRect" parent="CanvasLayer"]
 anchors_preset = 8
 anchor_left = 0.5
@@ -198,3 +366,12 @@ text = "[wave amp=50.0 freq=5.0 connected=1]O Sol proclamará[/wave]"
 horizontal_alignment = 1
 vertical_alignment = 1
 selection_enabled = true
+
+[node name="cutscene_ost" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_g3bln")
+bus = &"Music"
+parameters/looping = true
+
+[node name="tv_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26_aj15y")
+bus = &"Sfx"

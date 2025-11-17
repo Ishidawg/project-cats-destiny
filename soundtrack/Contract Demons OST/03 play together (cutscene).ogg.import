@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c2vemrfsbu70k"
+path="res://.godot/imported/03 play together (cutscene).ogg-eb42b121afc2a2b2fb60543413ca14cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://soundtrack/Contract Demons OST/03 play together (cutscene).ogg"
+dest_files=["res://.godot/imported/03 play together (cutscene).ogg-eb42b121afc2a2b2fb60543413ca14cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

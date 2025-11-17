@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bvw61blbsx1wd"
+path="res://.godot/imported/05 Uncertainty Matrix (title_screen).ogg-42fc29f1f1f8ad750cc72e52ac4a8a05.oggvorbisstr"
+
+[deps]
+
+source_file="res://soundtrack/Charm Studies OST/05 Uncertainty Matrix (title_screen).ogg"
+dest_files=["res://.godot/imported/05 Uncertainty Matrix (title_screen).ogg-42fc29f1f1f8ad750cc72e52ac4a8a05.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

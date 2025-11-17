@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://6k3xfdbtsw8i"]
+[gd_scene load_steps=14 format=3 uid="uid://6k3xfdbtsw8i"]
 
 [ext_resource type="Script" uid="uid://blim6llfuptfy" path="res://scenes/main_menu/main_menu.gd" id="1_ob46e"]
 [ext_resource type="FontFile" uid="uid://bayl34n5s6ic7" path="res://fonts/dungeon-mode.ttf" id="2_ob46e"]
 [ext_resource type="Texture2D" uid="uid://dms8vagd3ilb8" path="res://assets/main_menu/main_menu.png" id="2_uqeha"]
 [ext_resource type="PackedScene" uid="uid://6ndtlmtwcxyc" path="res://scenes/post_processing_effects/crt_effect.tscn" id="3_ob46e"]
+[ext_resource type="AudioStream" uid="uid://bvw61blbsx1wd" path="res://soundtrack/Charm Studies OST/05 Uncertainty Matrix (title_screen).ogg" id="5_wem23"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uqeha"]
 texture = ExtResource("2_uqeha")
@@ -226,6 +227,12 @@ offset_left = 320.0
 offset_top = 510.0
 offset_right = 320.0
 offset_bottom = 510.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_wem23")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
 
 [connection signal="pressed" from="background/main_menu/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="background/main_menu/quit" to="." method="_on_quit_pressed"]
