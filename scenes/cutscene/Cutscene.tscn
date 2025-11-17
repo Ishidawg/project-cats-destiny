@@ -1,0 +1,200 @@
+[gd_scene load_steps=15 format=3 uid="uid://craphrr5whgly"]
+
+[ext_resource type="Texture2D" uid="uid://dxcwuy4fabsep" path="res://assets/cutscene/tv.png" id="1_837in"]
+[ext_resource type="Shader" uid="uid://bcquya0xwlux7" path="res://scenes/post_processing_effects/startfield.gdshader" id="1_tulu6"]
+[ext_resource type="Texture2D" uid="uid://1v5gyv540axe" path="res://assets/cutscene/cutscene1.png" id="2_6ri26"]
+[ext_resource type="Texture2D" uid="uid://bmxv1l4q1snel" path="res://assets/cutscene/cutscene2.png" id="2_8prnn"]
+[ext_resource type="Texture2D" uid="uid://cat2bmjnwg4jg" path="res://assets/cutscene/cutscene3.png" id="3_27chg"]
+[ext_resource type="FontFile" uid="uid://bayl34n5s6ic7" path="res://fonts/dungeon-mode.ttf" id="3_i4xmo"]
+[ext_resource type="Texture2D" uid="uid://qjq1oo5qgnh2" path="res://assets/cutscene/cutscene4.png" id="4_g3bln"]
+[ext_resource type="Texture2D" uid="uid://dg3u12xeg77rk" path="res://assets/cutscene/cutscene5.png" id="5_mxxg0"]
+[ext_resource type="Texture2D" uid="uid://bjx13rtuoyyqu" path="res://assets/cutscene/cutscene6.png" id="6_dtlxr"]
+[ext_resource type="Texture2D" uid="uid://bd23v8h5hycms" path="res://assets/cutscene/cutscene7.png" id="7_woitd"]
+
+[sub_resource type="Animation" id="Animation_837in"]
+resource_name = "cutscene"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/text:text")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3, 6, 9, 12, 15, 18),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["[wave amp=50.0 freq=5.0 connected=1]O Sol proclamará[/wave]", "[wave amp=50.0 freq=5.0 connected=1]A Lua irá fugir[/wave]", "[wave amp=50.0 freq=5.0 connected=1]A terra vai queimar[/wave]", "[wave amp=50.0 freq=5.0 connected=1]As almas irão fugir pra outro lugar[/wave]", "[wave amp=50.0 freq=5.0 connected=1]Os deuses procurarão por seus filhos antes abandonados[/wave]", "[wave amp=50.0 freq=5.0 connected=1]As bruxas vão descansar na Lua[/wave]", "[wave amp=50.0 freq=5.0 connected=1]Aguardando a sua invocação
+[/wave]"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/images:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3, 6, 9, 12, 15, 18),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_6ri26"), ExtResource("2_8prnn"), ExtResource("3_27chg"), ExtResource("4_g3bln"), ExtResource("5_mxxg0"), ExtResource("6_dtlxr"), ExtResource("7_woitd")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/fadeInFadeOut:color")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25, 2.75, 3, 3.25, 5.75, 6, 6.25, 8.75, 9, 9.25, 11.75, 12, 12.25, 14.75, 15, 15.25, 17.75, 18, 18.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_i4xmo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["[wave amp=50.0 freq=5.0 connected=1]O Sol proclamará[/wave]"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/images:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_6ri26")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/fadeInFadeOut:color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i4xmo"]
+_data = {
+&"RESET": SubResource("Animation_i4xmo"),
+&"cutscene": SubResource("Animation_837in")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_837in"]
+shader = ExtResource("1_tulu6")
+shader_parameter/dimensions = Vector2(1024, 600)
+shader_parameter/small_stars = 50.0
+shader_parameter/small_stars_far_size = 0.5
+shader_parameter/small_stars_near_size = 1.0
+shader_parameter/large_stars = 8.0
+shader_parameter/large_stars_far_size = 0.5
+shader_parameter/large_stars_near_size = 1.0
+shader_parameter/far_stars_color = Color(0.5, 0, 1, 1)
+shader_parameter/near_stars_color = Color(1, 1, 1, 1)
+shader_parameter/base_scroll_speed = 0.05
+shader_parameter/additional_scroll_speed = 0.05
+
+[node name="Cutscene" type="Node"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_i4xmo")
+}
+autoplay = "cutscene"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="starfield" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_837in")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="images" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -308.0
+offset_right = 250.0
+offset_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6ri26")
+stretch_mode = 5
+
+[node name="fadeInFadeOut" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -310.0
+offset_right = 250.0
+offset_bottom = 190.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="television" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -315.0
+offset_right = 256.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 2
+texture = ExtResource("1_837in")
+stretch_mode = 5
+
+[node name="text" type="RichTextLabel" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -621.5
+offset_top = -118.0
+offset_right = 621.5
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 2
+theme_override_fonts/normal_font = ExtResource("3_i4xmo")
+theme_override_font_sizes/normal_font_size = 45
+bbcode_enabled = true
+text = "[wave amp=50.0 freq=5.0 connected=1]O Sol proclamará[/wave]"
+horizontal_alignment = 1
+vertical_alignment = 1
+selection_enabled = true

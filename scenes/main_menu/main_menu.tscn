@@ -1,12 +1,12 @@
 [gd_scene load_steps=13 format=3 uid="uid://6k3xfdbtsw8i"]
 
-[ext_resource type="Texture2D" uid="uid://cpo1rg37dfngy" path="res://assets/main_menu/background.png" id="1_0ebjn"]
 [ext_resource type="Script" uid="uid://blim6llfuptfy" path="res://scenes/main_menu/main_menu.gd" id="1_ob46e"]
 [ext_resource type="FontFile" uid="uid://bayl34n5s6ic7" path="res://fonts/dungeon-mode.ttf" id="2_ob46e"]
+[ext_resource type="Texture2D" uid="uid://dms8vagd3ilb8" path="res://assets/main_menu/main_menu.png" id="2_uqeha"]
 [ext_resource type="PackedScene" uid="uid://6ndtlmtwcxyc" path="res://scenes/post_processing_effects/crt_effect.tscn" id="3_ob46e"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uqeha"]
-texture = ExtResource("1_0ebjn")
+texture = ExtResource("2_uqeha")
 modulate_color = Color(0.70380783, 0.70380783, 0.70380783, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wem23"]
@@ -51,12 +51,57 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_uqeha")
 
+[node name="main_title" type="RichTextLabel" parent="background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -331.75
+offset_top = -106.0
+offset_right = 331.75
+offset_bottom = -41.999817
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_ob46e")
+theme_override_font_sizes/normal_font_size = 63
+bbcode_enabled = true
+text = "[shake rate=4.0 level=4 connected=1]Cat Destiny[/shake]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="demo_title" type="RichTextLabel" parent="background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.25
+offset_top = -40.0
+offset_right = 303.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_ob46e")
+theme_override_font_sizes/normal_font_size = 18
+text = "DEMO"
+horizontal_alignment = 2
+vertical_alignment = 1
+
 [node name="main_menu" type="VBoxContainer" parent="background"]
-layout_mode = 0
-offset_left = 508.0
-offset_top = 490.0
-offset_right = 772.0
-offset_bottom = 666.0
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -132.0
+offset_top = -366.0
+offset_right = 132.0
+grow_horizontal = 2
+grow_vertical = 0
 size_flags_horizontal = 6
 size_flags_vertical = 8
 size_flags_stretch_ratio = 8.63
@@ -68,8 +113,6 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(0.87058824, 0.87058824, 0.87058824, 1)
-theme_override_colors/font_outline_color = Color(0.14044744, 0.14044744, 0.14044744, 1)
-theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("2_ob46e")
 theme_override_font_sizes/font_size = 72
 theme_override_styles/focus = SubResource("StyleBoxEmpty_wem23")
@@ -82,7 +125,6 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(0.87058824, 0.87058824, 0.87058824, 1)
 theme_override_colors/font_outline_color = Color(0.14117648, 0.14117648, 0.14117648, 1)
-theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("2_ob46e")
 theme_override_font_sizes/font_size = 36
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3ovsr")
@@ -95,7 +137,6 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(0.87058824, 0.87058824, 0.87058824, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("2_ob46e")
 theme_override_font_sizes/font_size = 36
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5seab")
@@ -104,6 +145,7 @@ flat = true
 
 [node name="settings_menu" type="Panel" parent="."]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -178,6 +220,7 @@ flat = true
 
 [node name="CrtEffect" parent="." instance=ExtResource("3_ob46e")]
 unique_name_in_owner = true
+visible = false
 layout_mode = 0
 offset_left = 320.0
 offset_top = 510.0
