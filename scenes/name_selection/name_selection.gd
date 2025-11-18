@@ -1,6 +1,7 @@
 class_name NameSelection extends Control
 
-@onready var line_edit: LineEdit = $VBoxContainer/VBoxContainer/LineEdit
+@onready var line_edit: LineEdit = $CanvasLayer/VBoxContainer/VBoxContainer/LineEdit
+
 var input: String
 
 signal PA

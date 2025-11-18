@@ -11,6 +11,9 @@ extends Control
 
 func _ready() -> void:
 	settings_menu.visible = false
+	
+func _on_play_pressed() -> void:
+	SceneTransition.change_scene("res://scenes/cutscene/Cutscene.tscn")
 
 func _on_options_pressed() -> void:
 	settings_menu.visible = true

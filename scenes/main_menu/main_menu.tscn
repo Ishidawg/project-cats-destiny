@@ -220,6 +220,7 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_ob46e")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/focus = SubResource("StyleBoxEmpty_lqpn7")
+button_pressed = true
 text = "CRT Effect"
 
 [node name="close_btn" type="Button" parent="settings_menu"]
@@ -254,6 +255,7 @@ autoplay = true
 bus = &"Music"
 parameters/looping = true
 
+[connection signal="pressed" from="background/main_menu/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="background/main_menu/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="background/main_menu/quit" to="." method="_on_quit_pressed"]
 [connection signal="toggled" from="settings_menu/settings_menu/fullscreen_cb" to="." method="_on_fullscreen_cb_toggled"]
