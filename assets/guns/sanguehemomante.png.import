@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cijjj75kohgfj"
-path="res://.godot/imported/sanguenecromante.png-b336bc71155cba3ca91def5b7511f21d.ctex"
+path="res://.godot/imported/sanguehemomante.png-09bbde33d6475b3a556dadbac4e7a3d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/guns/sanguenecromante.png"
-dest_files=["res://.godot/imported/sanguenecromante.png-b336bc71155cba3ca91def5b7511f21d.ctex"]
+source_file="res://assets/guns/sanguehemomante.png"
+dest_files=["res://.godot/imported/sanguehemomante.png-09bbde33d6475b3a556dadbac4e7a3d2.ctex"]
 
 [params]
 

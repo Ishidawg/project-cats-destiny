@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://c8hscqwy4uixy"]
+[gd_scene load_steps=7 format=3 uid="uid://c8hscqwy4uixy"]
 
 [ext_resource type="PackedScene" uid="uid://bcypqgoo5ftpe" path="res://scenes/classes/base_class.tscn" id="1_ecjad"]
 [ext_resource type="Texture2D" uid="uid://cwnbma4jpbw1y" path="res://assets/classes/hemomante1.png" id="2_a3hv2"]
 [ext_resource type="Texture2D" uid="uid://buombegs8821g" path="res://assets/classes/hemomante2.png" id="3_sj6vd"]
 [ext_resource type="Texture2D" uid="uid://cjnlb12iej5g3" path="res://assets/classes/hemomante3.png" id="4_5pkft"]
+[ext_resource type="Texture2D" uid="uid://cijjj75kohgfj" path="res://assets/guns/sanguehemomante.png" id="5_a3hv2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ecjad"]
 animations = [{
@@ -27,3 +28,6 @@ description = "Hemomante"
 
 [node name="ClassSprites" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_ecjad")
+
+[node name="Gun" parent="." index="1"]
+texture = ExtResource("5_a3hv2")

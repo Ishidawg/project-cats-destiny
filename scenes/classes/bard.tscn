@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bciw78xahggt1"]
+[gd_scene load_steps=8 format=3 uid="uid://bciw78xahggt1"]
 
 [ext_resource type="PackedScene" uid="uid://bcypqgoo5ftpe" path="res://scenes/classes/base_class.tscn" id="1_ml7o1"]
 [ext_resource type="Script" uid="uid://c517mr2rgqkak" path="res://scenes/classes/bard.gd" id="2_u6ww2"]
 [ext_resource type="Texture2D" uid="uid://du87jykpv5faw" path="res://assets/classes/bardo1.png" id="3_ax0jv"]
 [ext_resource type="Texture2D" uid="uid://b5yg1unhf2qpd" path="res://assets/classes/bardo2.png" id="4_ssstp"]
 [ext_resource type="Texture2D" uid="uid://da6yyp4phoukv" path="res://assets/classes/bardo3.png" id="5_dpanj"]
+[ext_resource type="Texture2D" uid="uid://bq30trwg63mv4" path="res://assets/guns/musicabardo.png" id="6_u6ww2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ml7o1"]
 animations = [{
@@ -29,3 +30,6 @@ description = "Bardo"
 
 [node name="ClassSprites" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_ml7o1")
+
+[node name="Gun" parent="." index="1"]
+texture = ExtResource("6_u6ww2")

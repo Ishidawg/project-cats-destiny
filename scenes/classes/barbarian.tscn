@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://fcn2d3g317j3"]
+[gd_scene load_steps=8 format=3 uid="uid://fcn2d3g317j3"]
 
 [ext_resource type="Script" uid="uid://bj1ku38158wdj" path="res://scenes/classes/barbarian.gd" id="1_3mu7i"]
 [ext_resource type="PackedScene" uid="uid://bcypqgoo5ftpe" path="res://scenes/classes/base_class.tscn" id="1_mag5j"]
 [ext_resource type="Texture2D" uid="uid://cy2pm5i7gi0cc" path="res://assets/classes/barbaro1.png" id="3_dmxxt"]
 [ext_resource type="Texture2D" uid="uid://c361isbh8dcau" path="res://assets/classes/barbaro2.png" id="4_q1xql"]
 [ext_resource type="Texture2D" uid="uid://cnngucir3jkx6" path="res://assets/classes/barbaro3.png" id="5_a00qs"]
+[ext_resource type="Texture2D" uid="uid://d2cswcl5v1vht" path="res://assets/guns/clavabarbaro.png" id="6_dmxxt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mag5j"]
 animations = [{
@@ -29,3 +30,6 @@ description = "Bárbaro"
 
 [node name="ClassSprites" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_mag5j")
+
+[node name="Gun" parent="." index="1"]
+texture = ExtResource("6_dmxxt")

@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cd5osdpdem25q"]
+[gd_scene load_steps=7 format=3 uid="uid://cd5osdpdem25q"]
 
 [ext_resource type="PackedScene" uid="uid://bcypqgoo5ftpe" path="res://scenes/classes/base_class.tscn" id="1_uc458"]
 [ext_resource type="Texture2D" uid="uid://dbthwgxno2wn7" path="res://assets/classes/gunslinger1.png" id="2_ol5ci"]
 [ext_resource type="Texture2D" uid="uid://cthu28aii4tjb" path="res://assets/classes/gunslinger2.png" id="3_i1nf8"]
 [ext_resource type="Texture2D" uid="uid://djgmhmtxx1o4f" path="res://assets/classes/gunslinger3.png" id="4_21i6u"]
+[ext_resource type="Texture2D" uid="uid://bodkyx5r4pkb6" path="res://assets/guns/armagunslinger.png" id="5_ol5ci"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uc458"]
 animations = [{
@@ -27,3 +28,6 @@ description = "Atirador"
 
 [node name="ClassSprites" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_uc458")
+
+[node name="Gun" parent="." index="1"]
+texture = ExtResource("5_ol5ci")

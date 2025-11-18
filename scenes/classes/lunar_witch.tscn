@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dhdvpiren8ra2"]
+[gd_scene load_steps=7 format=3 uid="uid://dhdvpiren8ra2"]
 
 [ext_resource type="PackedScene" uid="uid://bcypqgoo5ftpe" path="res://scenes/classes/base_class.tscn" id="1_6nsjn"]
 [ext_resource type="Texture2D" uid="uid://bbvic4fj8iimx" path="res://assets/classes/lua1.png" id="2_4aw5x"]
 [ext_resource type="Texture2D" uid="uid://dmj7vkbp82avg" path="res://assets/classes/lua2.png" id="3_jh8ht"]
 [ext_resource type="Texture2D" uid="uid://dt5md0gwfd12l" path="res://assets/classes/lua3.png" id="4_wa3sp"]
+[ext_resource type="Texture2D" uid="uid://cewubk8apigf4" path="res://assets/guns/varinhadalua.png" id="5_4aw5x"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6nsjn"]
 animations = [{
@@ -27,3 +28,6 @@ description = "Bruxinha Lunar"
 
 [node name="ClassSprites" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_6nsjn")
+
+[node name="Gun" parent="." index="1"]
+texture = ExtResource("5_4aw5x")

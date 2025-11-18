@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cjbea5i8w5iek"]
+[gd_scene load_steps=7 format=3 uid="uid://cjbea5i8w5iek"]
 
 [ext_resource type="PackedScene" uid="uid://bcypqgoo5ftpe" path="res://scenes/classes/base_class.tscn" id="1_mrn1f"]
 [ext_resource type="Texture2D" uid="uid://cahudj3v1gtts" path="res://assets/classes/botanista1.png" id="2_u558n"]
 [ext_resource type="Texture2D" uid="uid://csa3s5x25wduc" path="res://assets/classes/botanista2.png" id="3_y12s4"]
 [ext_resource type="Texture2D" uid="uid://csumxi6ndhbe1" path="res://assets/classes/botanista3.png" id="4_u28el"]
+[ext_resource type="Texture2D" uid="uid://cjvfhfqpi2yxp" path="res://assets/guns/flormagicabotanista.png" id="5_y12s4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u558n"]
 animations = [{
@@ -27,3 +28,6 @@ description = "Botanista"
 
 [node name="ClassSprites" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_u558n")
+
+[node name="Gun" parent="." index="1"]
+texture = ExtResource("5_y12s4")
