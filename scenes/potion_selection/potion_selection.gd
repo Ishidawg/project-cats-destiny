@@ -22,9 +22,9 @@ func _on_cauldron_full(cauldron: Cauldron) -> void:
 	# Exibe a apresentação da classe
 	var class_presentation: ClassPresentation = class_presentation_scene.instantiate()
 	add_child(class_presentation)
-	class_presentation.load(classe)
-	await get_tree().create_timer(3).timeout
-	class_presentation.free()
+	class_presentation.class_load(classe)
+	#await get_tree().create_timer(3).timeout
+	#class_presentation.free()
 	
 	#player.instantiate()
 	#add_child(player)

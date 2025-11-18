@@ -1,10 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://bciw78xahggt1"]
+[gd_scene load_steps=7 format=3 uid="uid://bciw78xahggt1"]
 
-[ext_resource type="Script" uid="uid://c517mr2rgqkak" path="res://scenes/classes/bard.gd" id="1_svs16"]
-[ext_resource type="Texture2D" uid="uid://c11eo4nos6b0" path="res://assets/classes/bard.png" id="2_pwuy6"]
+[ext_resource type="PackedScene" uid="uid://bcypqgoo5ftpe" path="res://scenes/classes/base_class.tscn" id="1_ml7o1"]
+[ext_resource type="Script" uid="uid://c517mr2rgqkak" path="res://scenes/classes/bard.gd" id="2_u6ww2"]
+[ext_resource type="Texture2D" uid="uid://du87jykpv5faw" path="res://assets/classes/bardo1.png" id="3_ax0jv"]
+[ext_resource type="Texture2D" uid="uid://b5yg1unhf2qpd" path="res://assets/classes/bardo2.png" id="4_ssstp"]
+[ext_resource type="Texture2D" uid="uid://da6yyp4phoukv" path="res://assets/classes/bardo3.png" id="5_dpanj"]
 
-[node name="Bard" type="Node"]
-script = ExtResource("1_svs16")
+[sub_resource type="SpriteFrames" id="SpriteFrames_ml7o1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ax0jv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ssstp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_dpanj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Bard" instance=ExtResource("1_ml7o1")]
+script = ExtResource("2_u6ww2")
 description = "Bardo"
-texture = ExtResource("2_pwuy6")
-metadata/_custom_type_script = "uid://ctfp76jx6phh"
+
+[node name="ClassSprites" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_ml7o1")

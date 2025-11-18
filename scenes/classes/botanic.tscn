@@ -1,10 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://cjbea5i8w5iek"]
+[gd_scene load_steps=6 format=3 uid="uid://cjbea5i8w5iek"]
 
-[ext_resource type="Script" uid="uid://bup015356rvlq" path="res://scenes/classes/botanic.gd" id="1_mrn1f"]
-[ext_resource type="Texture2D" uid="uid://dh3f0ku5tcxty" path="res://assets/classes/botanic.png" id="2_8h1oe"]
+[ext_resource type="PackedScene" uid="uid://bcypqgoo5ftpe" path="res://scenes/classes/base_class.tscn" id="1_mrn1f"]
+[ext_resource type="Texture2D" uid="uid://cahudj3v1gtts" path="res://assets/classes/botanista1.png" id="2_u558n"]
+[ext_resource type="Texture2D" uid="uid://csa3s5x25wduc" path="res://assets/classes/botanista2.png" id="3_y12s4"]
+[ext_resource type="Texture2D" uid="uid://csumxi6ndhbe1" path="res://assets/classes/botanista3.png" id="4_u28el"]
 
-[node name="Botanic" type="Node"]
-script = ExtResource("1_mrn1f")
+[sub_resource type="SpriteFrames" id="SpriteFrames_u558n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_u558n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y12s4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_u28el")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Botanic" instance=ExtResource("1_mrn1f")]
 description = "Botanista"
-texture = ExtResource("2_8h1oe")
-metadata/_custom_type_script = "uid://ctfp76jx6phh"
+
+[node name="ClassSprites" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_u558n")

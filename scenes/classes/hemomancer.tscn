@@ -1,10 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8hscqwy4uixy"]
+[gd_scene load_steps=6 format=3 uid="uid://c8hscqwy4uixy"]
 
-[ext_resource type="Script" uid="uid://dpq6ryhaia55u" path="res://scenes/classes/hemomancer.gd" id="1_4at1s"]
-[ext_resource type="Texture2D" uid="uid://dx3nbb4roy071" path="res://assets/classes/hemomancer.png" id="2_wnfbg"]
+[ext_resource type="PackedScene" uid="uid://bcypqgoo5ftpe" path="res://scenes/classes/base_class.tscn" id="1_ecjad"]
+[ext_resource type="Texture2D" uid="uid://cwnbma4jpbw1y" path="res://assets/classes/hemomante1.png" id="2_a3hv2"]
+[ext_resource type="Texture2D" uid="uid://buombegs8821g" path="res://assets/classes/hemomante2.png" id="3_sj6vd"]
+[ext_resource type="Texture2D" uid="uid://cjnlb12iej5g3" path="res://assets/classes/hemomante3.png" id="4_5pkft"]
 
-[node name="Hemomancer" type="Node"]
-script = ExtResource("1_4at1s")
+[sub_resource type="SpriteFrames" id="SpriteFrames_ecjad"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a3hv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sj6vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5pkft")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Hemomancer" instance=ExtResource("1_ecjad")]
 description = "Hemomante"
-texture = ExtResource("2_wnfbg")
-metadata/_custom_type_script = "uid://ctfp76jx6phh"
+
+[node name="ClassSprites" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_ecjad")

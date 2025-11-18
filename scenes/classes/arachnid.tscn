@@ -1,10 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://d30yi00lhmqhu"]
+[gd_scene load_steps=7 format=3 uid="uid://d30yi00lhmqhu"]
 
 [ext_resource type="Script" uid="uid://bxct46sak0nv0" path="res://scenes/classes/arachnid.gd" id="1_jfk34"]
-[ext_resource type="Texture2D" uid="uid://pqefqqojmi84" path="res://assets/classes/arachnid.png" id="2_mham0"]
+[ext_resource type="PackedScene" uid="uid://bcypqgoo5ftpe" path="res://scenes/classes/base_class.tscn" id="1_mham0"]
+[ext_resource type="Texture2D" uid="uid://di6c5rfq81aeu" path="res://assets/classes/aranha1.png" id="3_dgua4"]
+[ext_resource type="Texture2D" uid="uid://b6g2f8mhhw0cv" path="res://assets/classes/aranha2.png" id="4_dlw70"]
+[ext_resource type="Texture2D" uid="uid://oetv144k10sc" path="res://assets/classes/aranha3.png" id="5_sk5mq"]
 
-[node name="Arachnid" type="Node"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_dgua4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_dgua4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dlw70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sk5mq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Arachnid" instance=ExtResource("1_mham0")]
 script = ExtResource("1_jfk34")
 description = "Aracnídeo"
-texture = ExtResource("2_mham0")
-metadata/_custom_type_script = "uid://ctfp76jx6phh"
+
+[node name="ClassSprites" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_dgua4")

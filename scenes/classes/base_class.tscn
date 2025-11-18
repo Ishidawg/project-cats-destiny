@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://bcypqgoo5ftpe"]
+[gd_scene load_steps=3 format=3 uid="uid://bcypqgoo5ftpe"]
 
 [ext_resource type="Script" uid="uid://ctfp76jx6phh" path="res://scenes/classes/base_class.gd" id="1_7bfxm"]
+[ext_resource type="Texture2D" uid="uid://d0l3wbrubi3b7" path="res://assets/guns/presaaranha.png" id="2_kjhe5"]
 
 [node name="BaseClass" type="Node"]
 script = ExtResource("1_7bfxm")
+
+[node name="ClassSprites" type="AnimatedSprite2D" parent="."]
+position = Vector2(21, 20)
+autoplay = "default"
+
+[node name="Gun" type="Sprite2D" parent="."]
+texture = ExtResource("2_kjhe5")
+
+[connection signal="ready" from="." to="." method="_on_ready"]

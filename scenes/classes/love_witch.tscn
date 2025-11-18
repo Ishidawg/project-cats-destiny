@@ -1,10 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://dysr67p7o6lby"]
+[gd_scene load_steps=6 format=3 uid="uid://dysr67p7o6lby"]
 
-[ext_resource type="Script" uid="uid://clyfls2sckmfe" path="res://scenes/classes/love_witch.gd" id="1_hpdyg"]
-[ext_resource type="Texture2D" uid="uid://dwo653yhcor5h" path="res://assets/classes/love_witch.png" id="2_d4r1m"]
+[ext_resource type="PackedScene" uid="uid://bcypqgoo5ftpe" path="res://scenes/classes/base_class.tscn" id="1_w8afb"]
+[ext_resource type="Texture2D" uid="uid://ndlt644snlf7" path="res://assets/classes/amor1.png" id="2_p2k8x"]
+[ext_resource type="Texture2D" uid="uid://ddjnmvwwtfhf5" path="res://assets/classes/amor2.png" id="3_jcy6i"]
+[ext_resource type="Texture2D" uid="uid://uthbrjq8xgbw" path="res://assets/classes/amor3.png" id="4_vs6a2"]
 
-[node name="LoveWitch" type="Node"]
-script = ExtResource("1_hpdyg")
-description = "Bruxinha do Amor"
-texture = ExtResource("2_d4r1m")
-metadata/_custom_type_script = "uid://ctfp76jx6phh"
+[sub_resource type="SpriteFrames" id="SpriteFrames_w8afb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_p2k8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jcy6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vs6a2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="LoveWitch" instance=ExtResource("1_w8afb")]
+description = "Bruxinha Do Amor"
+
+[node name="ClassSprites" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_w8afb")
