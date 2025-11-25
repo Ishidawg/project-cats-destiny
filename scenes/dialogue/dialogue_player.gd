@@ -11,6 +11,10 @@ var in_progress := false
 @onready var dialogue_text := $DialogTexture/DialogVerticalContainer/RichTextLabel
 @onready var dialog_character := $DialogCharacter
 
+@export var dialog_key := ""
+@export var title_key := ""
+@export_file("*") var character_image
+
 signal open_dialogue
 signal close_dialogue
 
@@ -18,6 +22,10 @@ func _ready() -> void:
 	set_dialogue_false()
 	scene_text = load_scene_text()
 	SignalDisplayDialogue.connect("display_dialog", Callable(self, "on_display_dialog"))
+	
+func _input(event):
+	if event.is_action_pressed("accept"):
+		SignalDisplayDialogue.emit_signal("display_dialog", title_key, dialog_key, character_image)
 
 func load_scene_text() -> Dictionary:
 	if FileAccess.file_exists(scene_text_file):
