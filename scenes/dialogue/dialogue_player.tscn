@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dexyk2m4f8wgm"]
+[gd_scene load_steps=4 format=3 uid="uid://dexyk2m4f8wgm"]
 
 [ext_resource type="Script" uid="uid://dloxjl8fm2mb" path="res://scenes/dialogue/dialogue_player.gd" id="1_713rx"]
+[ext_resource type="FontFile" uid="uid://bayl34n5s6ic7" path="res://fonts/dungeon-mode.ttf" id="2_bphpr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_6mqn2"]
 line_spacing = 0.0
+font = ExtResource("2_bphpr")
+font_size = 18
 font_color = Color(0.24286577, 0.2842181, 0.3764366, 1)
+shadow_color = Color(0.45882353, 0.45882353, 0.45882353, 0.6039216)
 
 [node name="DialogPlayer" type="Control"]
 layout_mode = 3
@@ -48,9 +52,12 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="DialogName" type="Label" parent="DialogTexture/DialogVerticalContainer"]
-custom_minimum_size = Vector2(200, 40)
+custom_minimum_size = Vector2(400, 40)
 layout_mode = 2
 size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.97965485, 3.2440126e-05, 0.69207567, 1)
+theme_override_fonts/font = ExtResource("2_bphpr")
+theme_override_font_sizes/font_size = 12
 text = "Sr. Bomber Da SIlva"
 label_settings = SubResource("LabelSettings_6mqn2")
 vertical_alignment = 1
@@ -62,6 +69,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/default_color = Color(0.24313726, 0.28235295, 0.3764706, 1)
 theme_override_colors/font_shadow_color = Color(0.45840502, 0.45840502, 0.45840514, 0.6039216)
-theme_override_font_sizes/normal_font_size = 32
+theme_override_fonts/normal_font = ExtResource("2_bphpr")
+theme_override_font_sizes/normal_font_size = 18
 text = "Welcome to Floating Islands - ya I know it is not actually floating the skyes, but take look: skyes and water here it's same color haha! Well, this is a test demo of what this world could be, this is my destiny... be an npc that only test this sweet dialog box... And I'll be forever serving this only purpose..."
 fit_content = true
