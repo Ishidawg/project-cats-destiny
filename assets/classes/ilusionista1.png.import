@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1q42dasnpdub"
-path="res://.godot/imported/ilusionista1.png-2ffa19c735a796ec65c05e7f5f49fcb2.ctex"
+path="res://.godot/imported/ilusionista1.png-859183fd785b390d398824d33cc62b8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/ilusionista1.png"
-dest_files=["res://.godot/imported/ilusionista1.png-2ffa19c735a796ec65c05e7f5f49fcb2.ctex"]
+source_file="res://assets/Classes/ilusionista1.png"
+dest_files=["res://.godot/imported/ilusionista1.png-859183fd785b390d398824d33cc62b8c.ctex"]
 
 [params]
 

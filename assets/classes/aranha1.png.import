@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://di6c5rfq81aeu"
-path="res://.godot/imported/aranha1.png-977aa1ab40f8e404e722479c7f8858c3.ctex"
+path="res://.godot/imported/aranha1.png-e62d7fc99815431fe2d7c910f2ddea64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/aranha1.png"
-dest_files=["res://.godot/imported/aranha1.png-977aa1ab40f8e404e722479c7f8858c3.ctex"]
+source_file="res://assets/Classes/aranha1.png"
+dest_files=["res://.godot/imported/aranha1.png-e62d7fc99815431fe2d7c910f2ddea64.ctex"]
 
 [params]
 
