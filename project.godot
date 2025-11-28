@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="project-cats-destiny"
-run/main_scene="uid://c77viks16xf0n"
+run/main_scene="uid://6k3xfdbtsw8i"
 config/features=PackedStringArray("4.5", "Forward Plus")
 
 [autoload]
@@ -19,12 +19,12 @@ config/features=PackedStringArray("4.5", "Forward Plus")
 SignalDisplayDialogue="*res://global_scripts/signal_display_dialogue.gd"
 ClassesDictionary="*res://global_scripts/classes_dictionary.gd"
 SceneTransition="*res://scenes/scene_transition/scene_transition.tscn"
+PlayerData="*res://global_scripts/player_data.gd"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-window/size/mode=3
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 

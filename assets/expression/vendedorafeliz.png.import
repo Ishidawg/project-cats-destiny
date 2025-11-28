@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt3vtcmcseykt"
-path="res://.godot/imported/arqueiro2.png-6973b1258757ae5fd41dd1b8986828e4.ctex"
+uid="uid://ctyid87nbbhgh"
+path="res://.godot/imported/vendedorafeliz.png-a4ff137a0ec711ed5f9a8c3b53a414be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/arqueiro2.png"
-dest_files=["res://.godot/imported/arqueiro2.png-6973b1258757ae5fd41dd1b8986828e4.ctex"]
+source_file="res://assets/expression/vendedorafeliz.png"
+dest_files=["res://.godot/imported/vendedorafeliz.png-a4ff137a0ec711ed5f9a8c3b53a414be.ctex"]
 
 [params]
 

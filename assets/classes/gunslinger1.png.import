@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbthwgxno2wn7"
-path="res://.godot/imported/gunslinger1.png-fbba12cc64082f40ebdf569b17314759.ctex"
+path="res://.godot/imported/gunslinger1.png-a2151f54b680ef6a93afbc2e70be136f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Classes/gunslinger1.png"
-dest_files=["res://.godot/imported/gunslinger1.png-fbba12cc64082f40ebdf569b17314759.ctex"]
+source_file="res://assets/classes/gunslinger1.png"
+dest_files=["res://.godot/imported/gunslinger1.png-a2151f54b680ef6a93afbc2e70be136f.ctex"]
 
 [params]
 

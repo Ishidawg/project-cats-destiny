@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt3vtcmcseykt"
-path="res://.godot/imported/arqueiro2.png-6973b1258757ae5fd41dd1b8986828e4.ctex"
+uid="uid://bcm4xpvast0om"
+path="res://.godot/imported/gatinhoneutro.png-6fe8aa8820dfa4809b51732073360aff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/arqueiro2.png"
-dest_files=["res://.godot/imported/arqueiro2.png-6973b1258757ae5fd41dd1b8986828e4.ctex"]
+source_file="res://assets/expression/gatinhoneutro.png"
+dest_files=["res://.godot/imported/gatinhoneutro.png-6fe8aa8820dfa4809b51732073360aff.ctex"]
 
 [params]
 

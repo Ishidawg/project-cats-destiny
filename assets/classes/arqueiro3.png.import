@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpgrlem0ha4bl"
-path="res://.godot/imported/arqueiro3.png-13e954cef20be9fb36d8867bf36aa292.ctex"
+path="res://.godot/imported/arqueiro3.png-f01b22826007d0fde4d00f732f60e331.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Classes/arqueiro3.png"
-dest_files=["res://.godot/imported/arqueiro3.png-13e954cef20be9fb36d8867bf36aa292.ctex"]
+source_file="res://assets/classes/arqueiro3.png"
+dest_files=["res://.godot/imported/arqueiro3.png-f01b22826007d0fde4d00f732f60e331.ctex"]
 
 [params]
 

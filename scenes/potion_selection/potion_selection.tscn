@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://c77viks16xf0n"]
 
-[ext_resource type="Script" uid="uid://cyesvc61hcyrl" path="res://scenes/potion_selection/potion_selection.gd" id="1_vpfhd"]
+[ext_resource type="Script" uid="uid://cw70bdykuk6s" path="res://scenes/potion_selection/potion_selection.gd" id="1_vpfhd"]
 [ext_resource type="Texture2D" uid="uid://biobq2pfddkf8" path="res://assets/potion_selection_assets/seller.png" id="2_ny5bg"]
 [ext_resource type="PackedScene" uid="uid://co8iuks1bypf4" path="res://scenes/item_container/components/item_container_visual.tscn" id="3_f2w0q"]
 [ext_resource type="Texture2D" uid="uid://cpo1rg37dfngy" path="res://assets/main_menu/background.png" id="4_p4ayx"]

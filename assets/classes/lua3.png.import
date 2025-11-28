@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt5md0gwfd12l"
-path="res://.godot/imported/lua3.png-d42cb06e7c82305f768e77e80fd71e24.ctex"
+path="res://.godot/imported/lua3.png-1f70355e8f50e98f7ebf8e48e9b523a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Classes/lua3.png"
-dest_files=["res://.godot/imported/lua3.png-d42cb06e7c82305f768e77e80fd71e24.ctex"]
+source_file="res://assets/classes/lua3.png"
+dest_files=["res://.godot/imported/lua3.png-1f70355e8f50e98f7ebf8e48e9b523a1.ctex"]
 
 [params]
 

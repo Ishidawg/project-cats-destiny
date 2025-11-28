@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csumxi6ndhbe1"
-path="res://.godot/imported/botanista3.png-dd3fcfe31ddbdf6ce1e201b78afd5d92.ctex"
+path="res://.godot/imported/botanista3.png-74843608467e5f0f2244cc93d87aef29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Classes/botanista3.png"
-dest_files=["res://.godot/imported/botanista3.png-dd3fcfe31ddbdf6ce1e201b78afd5d92.ctex"]
+source_file="res://assets/classes/botanista3.png"
+dest_files=["res://.godot/imported/botanista3.png-74843608467e5f0f2244cc93d87aef29.ctex"]
 
 [params]
 

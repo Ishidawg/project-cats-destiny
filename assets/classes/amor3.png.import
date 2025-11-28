@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uthbrjq8xgbw"
-path="res://.godot/imported/amor3.png-420a82aeb7474ee4094efa773e1524ea.ctex"
+path="res://.godot/imported/amor3.png-0c9fb137cd0bfef29422d2caf55deaef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Classes/amor3.png"
-dest_files=["res://.godot/imported/amor3.png-420a82aeb7474ee4094efa773e1524ea.ctex"]
+source_file="res://assets/classes/amor3.png"
+dest_files=["res://.godot/imported/amor3.png-0c9fb137cd0bfef29422d2caf55deaef.ctex"]
 
 [params]
 

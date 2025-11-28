@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c361isbh8dcau"
-path="res://.godot/imported/barbaro2.png-753a02d9bcc9f8e30631467a0de68d9e.ctex"
+path="res://.godot/imported/barbaro2.png-25e5419cf80fa4778e5abecc6dc03bb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Classes/barbaro2.png"
-dest_files=["res://.godot/imported/barbaro2.png-753a02d9bcc9f8e30631467a0de68d9e.ctex"]
+source_file="res://assets/classes/barbaro2.png"
+dest_files=["res://.godot/imported/barbaro2.png-25e5419cf80fa4778e5abecc6dc03bb7.ctex"]
 
 [params]
 

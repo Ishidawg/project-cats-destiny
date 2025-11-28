@@ -4,4 +4,4 @@ extends Node
 
 func _ready() -> void:
 	await animation_player.animation_finished
-	SceneTransition.change_scene("res://scenes/potion_selection/potion_selection.tscn")
+	SceneTransition.change_scene("res://scenes/post_cutscene/post_cutscene.tscn")

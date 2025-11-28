@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwnbma4jpbw1y"
-path="res://.godot/imported/hemomante1.png-8599cd7b34efcb4e972ace8eb6391457.ctex"
+path="res://.godot/imported/hemomante1.png-9a955cdfb2e518fbc5419868ecba04c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Classes/hemomante1.png"
-dest_files=["res://.godot/imported/hemomante1.png-8599cd7b34efcb4e972ace8eb6391457.ctex"]
+source_file="res://assets/classes/hemomante1.png"
+dest_files=["res://.godot/imported/hemomante1.png-9a955cdfb2e518fbc5419868ecba04c1.ctex"]
 
 [params]
 

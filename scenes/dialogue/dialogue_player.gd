@@ -1,4 +1,4 @@
-extends Control
+class_name DialogPlayer extends Control
 
 @export_file("*.json") var scene_text_file
 
@@ -13,8 +13,11 @@ var in_progress := false
 @export var dialog_key := ""
 @export var title_key := ""
 
+signal play_dialogue
 signal open_dialogue
 signal close_dialogue
+
+signal finished
 
 func _ready() -> void:
 	set_dialogue_false()
@@ -22,6 +25,7 @@ func _ready() -> void:
 	SignalDisplayDialogue.connect("display_dialog", Callable(self, "on_display_dialog"))
 	
 func _input(event):
+	pass
 	if event.is_action_pressed("accept"):
 		SignalDisplayDialogue.emit_signal("display_dialog", title_key, dialog_key)
 
@@ -45,13 +49,14 @@ func next_line() -> void:
 func finish() -> void:
 	set_dialogue_false()
 	close_dialogue.emit()
+	finished.emit()
 
-func on_display_dialog(title_key, text_key) -> void:
+func on_display_dialog(title, text_key) -> void:
 	if in_progress:
 		next_line()
 	else:
 		set_dialogue_true()
-		npc_name.text = scene_text[title_key] # As the title is only one and doe not change, we can just pass the value from the json that IS NOT an array
+		npc_name.text = scene_text[title] # As the title is only one and doe not change, we can just pass the value from the json that IS NOT an array
 		selected_text = scene_text[text_key].duplicate()
 		show_dialogue()
 
@@ -64,3 +69,7 @@ func set_dialogue_false() -> void:
 func set_dialogue_true() -> void:
 	background.visible = true
 	in_progress = true
+
+
+func _on_play_dialogue() -> void:
+	SignalDisplayDialogue.emit_signal("display_dialog", title_key, dialog_key)
