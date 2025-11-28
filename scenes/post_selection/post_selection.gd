@@ -56,12 +56,12 @@ func _on_dialog_player_finished() -> void:
 	await name_selection.select() # Espera inserir o nome
 	remove_child(name_selection)
 	
-	print(name_selection.input)
+	PlayerData.player_name = name_selection.input
 	
 	# Exibe a apresentação da classe
 	var class_presentation: ClassPresentation = class_presentation_scene.instantiate()
 	add_child(class_presentation)
-	class_presentation.class_load(PlayerData.player_class)
+	class_presentation.class_load()
 
 func set_reaction():
 	if !PlayerData.player_class:
