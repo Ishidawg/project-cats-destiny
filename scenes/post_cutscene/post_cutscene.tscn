@@ -52,3 +52,5 @@ title_key = "bruxa_vendedora_title"
 
 [node name="DialogLayer" type="CanvasLayer" parent="."]
 visible = false
+
+[connection signal="finished" from="DefaultLayer/DialogPlayer" to="." method="_on_dialog_player_finished"]

@@ -2,7 +2,7 @@ class_name ClassPresentation extends Control
 
 @onready var class_image_sprite: Sprite2D = $ClassImageSprite
 @onready var class_description_label: Label = $CanvasLayer/ClassDescriptionLabel
-@onready var player_name_label: Label = $CanvasLayer/PlayerNameLabel
+@onready var player_name_label: Label = $CanvasLayer/Card/PlayerNameLabel
 @onready var texture: AnimatedSprite2D = $CanvasLayer/Card/AnimatedSprite2D
 @onready var gun: Sprite2D = $CanvasLayer/Card/Sprite2D
 

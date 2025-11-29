@@ -37,21 +37,6 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "teste"
 
-[node name="PlayerNameLabel" type="Label" parent="CanvasLayer"]
-z_index = 2
-anchors_preset = -1
-anchor_left = -0.446
-anchor_top = -0.37
-anchor_right = -0.446
-anchor_bottom = -0.37
-offset_left = 809.88
-offset_top = 728.4
-offset_right = 981.88
-offset_bottom = 751.4
-grow_horizontal = 2
-grow_vertical = 2
-text = "teste"
-
 [node name="Card" type="Sprite2D" parent="CanvasLayer"]
 z_index = 1
 position = Vector2(642.80005, 364.40002)
@@ -67,6 +52,22 @@ autoplay = "default"
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Card"]
 position = Vector2(-123.124985, 58.125)
 texture = ExtResource("3_farge")
+
+[node name="PlayerNameLabel" type="Label" parent="CanvasLayer/Card"]
+z_index = 2
+anchors_preset = -1
+anchor_left = -0.446
+anchor_top = -0.37
+anchor_right = -0.446
+anchor_bottom = -0.37
+offset_left = -20.989029
+offset_top = 123.13498
+offset_right = 157.01097
+offset_bottom = 146.13498
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+text = "MMMMMMMMMMMM"
 
 [node name="Background" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(641.00006, 368)
