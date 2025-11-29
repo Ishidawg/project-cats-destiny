@@ -47,20 +47,8 @@ y_sort_enabled = true
 texture_filter = 1
 size_flags_vertical = 4
 scene_text_file = "res://data/json/dialogs.json"
-dialog_key = "bruxa_vendedora"
-title_key = "bruxa_vendedora_title"
-
-[node name="DialogPlayer" parent="DefaultLayer/DialogPlayer" instance=ExtResource("2_6q75f")]
-visibility_layer = 3
-y_sort_enabled = true
-texture_filter = 1
-layout_mode = 1
-size_flags_vertical = 4
-scene_text_file = "res://data/json/dialogs.json"
 dialog_key = "bruxa_vendedora_dialogo_inicial"
 title_key = "bruxa_vendedora_title"
 
 [node name="DialogLayer" type="CanvasLayer" parent="."]
 visible = false
-
-[connection signal="finished" from="DefaultLayer/DialogPlayer" to="." method="_on_dialog_player_finished"]
