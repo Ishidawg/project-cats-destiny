@@ -6,6 +6,10 @@ class_name ClassPresentation extends Control
 @onready var texture: AnimatedSprite2D = $CanvasLayer/Card/AnimatedSprite2D
 @onready var gun: Sprite2D = $CanvasLayer/Card/Sprite2D
 
+func _ready() -> void:
+	OstPlayer.stop_music_post_cutsene() # stopa a musica das cenas anteriores para começar a tocar as dos creditos
+	OstPlayer.play_music_post_ending()
+	
 func class_load() -> void:
 	var classe = PlayerData.player_class
 	add_child(classe)

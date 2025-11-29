@@ -20,6 +20,7 @@ SignalDisplayDialogue="*res://global_scripts/signal_display_dialogue.gd"
 ClassesDictionary="*res://global_scripts/classes_dictionary.gd"
 SceneTransition="*res://scenes/scene_transition/scene_transition.tscn"
 PlayerData="*res://global_scripts/player_data.gd"
+OstPlayer="*res://scenes/non_stop_ost/ost_player.tscn"
 
 [display]
 
