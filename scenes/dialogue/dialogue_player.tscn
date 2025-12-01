@@ -1,14 +1,15 @@
 [gd_scene load_steps=5 format=3 uid="uid://dexyk2m4f8wgm"]
 
 [ext_resource type="Script" uid="uid://dloxjl8fm2mb" path="res://scenes/dialogue/dialogue_player.gd" id="1_713rx"]
-[ext_resource type="Texture2D" uid="uid://bdo7cxi1xhy4s" path="res://assets/UI/dialog/dialog-box-2.png" id="2_6mqn2"]
+[ext_resource type="Texture2D" uid="uid://m8ybhywdebbu" path="res://assets/UI/dialog/dialog-box-3.png" id="2_6mqn2"]
 [ext_resource type="FontFile" uid="uid://bayl34n5s6ic7" path="res://fonts/dungeon-mode.ttf" id="2_bphpr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_6mqn2"]
 line_spacing = 0.0
 font = ExtResource("2_bphpr")
 font_size = 9
-shadow_color = Color(0.45882353, 0.45882353, 0.45882353, 0.6039216)
+font_color = Color(0, 0, 0, 1)
+shadow_color = Color(1, 1, 1, 0.6039216)
 
 [node name="DialogPlayer" type="Control"]
 layout_mode = 3
@@ -22,27 +23,28 @@ script = ExtResource("1_713rx")
 
 [node name="DialogTexture" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = 7
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -355.0
-offset_top = -313.0
-offset_right = 355.0
-offset_bottom = -61.0
+anchor_bottom = 0.5
+offset_left = -568.0
+offset_top = -353.0
+offset_right = 782.0
+offset_bottom = 727.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
+scale = Vector2(0.85, 0.85)
 texture = ExtResource("2_6mqn2")
-stretch_mode = 4
+stretch_mode = 5
 
 [node name="DialogName" type="Label" parent="DialogTexture"]
 layout_mode = 0
-offset_left = 55.0
-offset_top = 8.0
-offset_right = 198.74998
-offset_bottom = 28.625
-scale = Vector2(1.6, 1.6)
+offset_left = 343.0
+offset_top = 357.0
+offset_right = 561.75
+offset_bottom = 377.625
+scale = Vector2(1.8, 1.8)
 size_flags_horizontal = 0
 theme_override_colors/font_color = Color(0.97965485, 3.2440126e-05, 0.69207567, 1)
 theme_override_fonts/font = ExtResource("2_bphpr")
@@ -56,14 +58,14 @@ text_overrun_behavior = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="DialogTexture"]
 layout_mode = 0
-offset_left = 12.0
-offset_top = 59.0
-offset_right = 316.0
-offset_bottom = 139.44446
-scale = Vector2(2.25, 2.25)
+offset_left = 327.05884
+offset_top = 403.5294
+offset_right = 575.7982
+offset_bottom = 549.3071
+scale = Vector2(2.8, 2.8)
 size_flags_vertical = 3
-theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_colors/font_shadow_color = Color(0.45840502, 0.45840502, 0.45840514, 0.6039216)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0.6039216)
 theme_override_constants/line_separation = 5
 theme_override_fonts/normal_font = ExtResource("2_bphpr")
 theme_override_font_sizes/normal_font_size = 9

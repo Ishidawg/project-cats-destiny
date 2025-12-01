@@ -1,11 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://bp31r5gqoqgre"]
+[gd_scene load_steps=7 format=3 uid="uid://bp31r5gqoqgre"]
 
 [ext_resource type="Script" uid="uid://dywj5dn4esagv" path="res://scenes/class_presentation/class_presentation.gd" id="1_3uusj"]
+[ext_resource type="FontFile" uid="uid://bayl34n5s6ic7" path="res://fonts/dungeon-mode.ttf" id="2_566dh"]
 [ext_resource type="Texture2D" uid="uid://k35jl4sqyxds" path="res://assets/class_presentation/fundo.png" id="2_farge"]
 [ext_resource type="Texture2D" uid="uid://dlax8ylshued6" path="res://assets/guns/arcoarqueiro.png" id="3_farge"]
-[ext_resource type="Texture2D" uid="uid://ogifjtewnoxb" path="res://assets/class_presentation/background.png" id="4_566dh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_656p6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_farge"]
+bg_color = Color(0.09019608, 0.011764706, 0.011764706, 1)
 
 [node name="ClassPresentation" type="Control"]
 z_index = 10
@@ -29,12 +32,15 @@ anchor_left = -0.446
 anchor_top = -0.37
 anchor_right = -0.446
 anchor_bottom = -0.37
-offset_left = 1219.88
-offset_top = 530.4
-offset_right = 1391.88
-offset_bottom = 553.4
+offset_left = 1208.895
+offset_top = 528.66504
+offset_right = 1380.895
+offset_bottom = 551.66504
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+theme_override_fonts/font = ExtResource("2_566dh")
+theme_override_font_sizes/font_size = 18
 text = "teste"
 
 [node name="Card" type="Sprite2D" parent="CanvasLayer"]
@@ -62,16 +68,22 @@ anchor_right = -0.446
 anchor_bottom = -0.37
 offset_left = -20.989029
 offset_top = 123.13498
-offset_right = 157.01097
-offset_bottom = 146.13498
+offset_right = 87.760956
+offset_bottom = 138.13498
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.6, 0.6)
+theme_override_fonts/font = ExtResource("2_566dh")
+theme_override_font_sizes/font_size = 9
 text = "MMMMMMMMMMMM"
 
-[node name="Background" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(641.00006, 368)
-scale = Vector2(2.6, 2.6)
-texture = ExtResource("4_566dh")
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_farge")
 
 [connection signal="ready" from="." to="." method="_on_ready"]

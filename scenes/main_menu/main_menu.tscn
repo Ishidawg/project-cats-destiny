@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://6k3xfdbtsw8i"]
+[gd_scene load_steps=21 format=3 uid="uid://6k3xfdbtsw8i"]
 
 [ext_resource type="Script" uid="uid://blim6llfuptfy" path="res://scenes/main_menu/main_menu.gd" id="1_ob46e"]
 [ext_resource type="FontFile" uid="uid://bayl34n5s6ic7" path="res://fonts/dungeon-mode.ttf" id="2_ob46e"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://imspqdycs8n2" path="res://assets/main_menu/telainicialanimada5.png" id="6_dn3lk"]
 [ext_resource type="Texture2D" uid="uid://2nanguvd61uq" path="res://assets/main_menu/telainicialanimada6.png" id="7_4ujhu"]
 [ext_resource type="Texture2D" uid="uid://bmpltgkamuoky" path="res://assets/main_menu/option_menu.png" id="9_lqpn7"]
+[ext_resource type="Script" uid="uid://cr0o3usgdxlqw" path="res://scenes/main_menu/soundtrack.gd" id="10_lqpn7"]
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_vnpsp"]
 frames = 6
@@ -191,9 +192,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -104.0
-offset_top = 2.0
+offset_top = -66.105
 offset_right = 104.0
-offset_bottom = 68.0
+offset_bottom = -0.10498047
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -212,6 +213,22 @@ theme_override_font_sizes/font_size = 18
 theme_override_styles/focus = SubResource("StyleBoxEmpty_lqpn7")
 button_pressed = true
 text = "CRT Effect"
+
+[node name="Gambiarra" type="Label" parent="settings_menu/settings_menu"]
+layout_mode = 2
+
+[node name="Soundtrack label" type="Label" parent="settings_menu/settings_menu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ob46e")
+theme_override_font_sizes/font_size = 18
+text = "Soundtrack"
+
+[node name="Soundtrack" type="HSlider" parent="settings_menu/settings_menu"]
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+script = ExtResource("10_lqpn7")
+bus_name = "Music"
 
 [node name="close_btn" type="Button" parent="settings_menu"]
 unique_name_in_owner = true
