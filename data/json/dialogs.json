@@ -1,8 +1,44 @@
 {
-	"red_lancer_soldier_title": "Sr. Crestfallen",
-	"red_lancer_soldier": [
-		"Welcome to Floating Islands - ya I know it is not actually floating the skyes, but take look: skyes and water here it's same color haha!",
-		"Well, this is a test demo of what this world could be, this is my destiny...",
-		"be an npc that only test this sweet dialog box... And I'll be forever serving this only purpose...",
+	"bruxa_vendedora_title": "Bruxa Vendedora",
+	"bruxa_vendedora_dialogo_inicial": [
+		"Ora, ora… veja só quem ousa entrar na minha cabana
+		\nUm viajante…
+		\nVocê tem cheiro de destino… ou de encrenca
+		\nHmm… talvez dos dois",
+		"Eu sou Mael, sou colecionadora de segredos e, 
+		\nocasionalmente, uma guia para as almas que ainda não sabem quem realmente são.",
+		"E você, meu caro viajante... parece carregar algo interessante dentro de si.
+		\nNo meu caldeirão borbulha a essência do destino.",
+		"Tudo o que precisa fazer é escolher o que mais chama sua curiosidade... e lançar no caldeirão.",
+	],
+	"resposta_feliz": [
+		"Doce viajante, vejo que voce sabe escolher bem...
+		\nAs poções dançaram no caldeirão como se estivessem pulando de alegria.",
+		"Voce tem um destino brilhante pela frente, e olha que eu não costumo dizer isso com frequência.",
+		"Sinto que seu caminho será cheio de boas energias, siga esse caminho com coragem.
+		\nOs Deuses estão ao seu lado."
+	],
+	"resposta_neutra": [
+		"Nem bom... nem ruim
+		\nApenas é...
+		\nSeu caminho é estável, meu viajante
+		\nNada extraordinário, mas também nada desastroso.",
+		"Um destino que cresce com o tempo, talvez?
+		\nNem todo precisam de grandes revelações para seguir em frente",
+		"Você é livre para trilhar seu proprio destino.",
+	],
+	"resposta_brava": [
+		"Oh, céus.
+		\nVocê realmente misturou essas poções?",
+		"Voce tem gosto pra desafios, isso eu tenho que admitir.
+		\nAgora, bom gosto? hmmm...
+		\nAi já é outra história.",
+		"Seja lá o que voce se tornou...
+		\nVai dar trabalho, e com certeza não pra mim, mas, para você mesmo.",
+		"O destino nem sempre é gentil e ele sempre cobrará um preço pelas suas escolhas.
+		\nSe bem que... quem disse que isso é algo ruim?",
+	],
+	"blank": [
+		""
 	]
 }

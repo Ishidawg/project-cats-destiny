@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ogifjtewnoxb"
-path="res://.godot/imported/background.png-30c944c684100c3c510b86eda9ed1c4d.ctex"
+uid="uid://cs7bjkq3mckn1"
+path="res://.godot/imported/gatinhotriste1.png-8763c3baedff28463195a4dd9489971e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classes/background.png"
-dest_files=["res://.godot/imported/background.png-30c944c684100c3c510b86eda9ed1c4d.ctex"]
+source_file="res://assets/expression/gatinhotriste1.png"
+dest_files=["res://.godot/imported/gatinhotriste1.png-8763c3baedff28463195a4dd9489971e.ctex"]
 
 [params]
 

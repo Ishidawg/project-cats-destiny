@@ -1,13 +1,20 @@
 class_name ClassPresentation extends Control
 
 @onready var class_image_sprite: Sprite2D = $ClassImageSprite
-@onready var class_description_label: Label = $ClassDescriptionLabel
-@onready var texture: AnimatedSprite2D = $Background/AnimatedSprite2D
-@onready var gun: Sprite2D = $Background/Sprite2D
+@onready var class_description_label: Label = $CanvasLayer/ClassDescriptionLabel
+@onready var player_name_label: Label = $CanvasLayer/Card/PlayerNameLabel
+@onready var texture: AnimatedSprite2D = $CanvasLayer/Card/AnimatedSprite2D
+@onready var gun: Sprite2D = $CanvasLayer/Card/Sprite2D
 
-func class_load(classe: Classe) -> void:
+func _ready() -> void:
+	OstPlayer.stop_music_post_cutsene() # stopa a musica das cenas anteriores para começar a tocar as dos creditos
+	OstPlayer.play_music_post_ending()
+	
+func class_load() -> void:
+	var classe = PlayerData.player_class
 	add_child(classe)
-	class_description_label.text = classe.description
+	class_description_label.text = "Classe: "+classe.description
+	player_name_label.text = PlayerData.player_name
 	texture.sprite_frames = classe.animated_texture.sprite_frames
 	texture.play("default")
 	gun.texture = classe.gun.texture

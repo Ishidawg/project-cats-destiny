@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddvcthn2wkbw3"]
+
+[ext_resource type="Script" uid="uid://bq32au4mle3hy" path="res://scenes/non_stop_ost/ost_player.gd" id="1_cfja6"]
+
+[node name="OstPlayer" type="AudioStreamPlayer"]
+bus = &"Music"
+script = ExtResource("1_cfja6")
