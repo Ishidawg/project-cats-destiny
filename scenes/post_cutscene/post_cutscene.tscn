@@ -25,8 +25,8 @@ size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_6q75f")
 
 [node name="Gato" type="Sprite2D" parent="DefaultLayer"]
-position = Vector2(388, 330)
-scale = Vector2(2.592391, 2.592391)
+position = Vector2(398, 327)
+scale = Vector2(3.2669837, 3.2669837)
 texture = ExtResource("3_6rej5")
 
 [node name="Seller" type="Sprite2D" parent="DefaultLayer"]
@@ -35,6 +35,7 @@ scale = Vector2(3.097826, 3.0978262)
 texture = ExtResource("4_4kiv7")
 
 [node name="DialogPlayer" parent="DefaultLayer" instance=ExtResource("2_6q75f")]
+visible = false
 visibility_layer = 3
 y_sort_enabled = true
 texture_filter = 1
