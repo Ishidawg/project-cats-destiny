@@ -7,11 +7,11 @@ extends Control
 @onready var quit: Button = %quit
 @onready var close_btn: Button = %close_btn
 
-@onready var crt_effect: Control = %CrtEffect
+@onready var crt_effect: CanvasLayer = %CrtEffect
 
 func _ready() -> void:
 	settings_menu.visible = false
-	
+
 func _on_play_pressed() -> void:
 	SceneTransition.change_scene("res://scenes/cutscene/Cutscene.tscn")
 
@@ -28,4 +28,4 @@ func _on_fullscreen_cb_toggled(toggled_on: bool) -> void:
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN) if toggled_on else DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 
 func _on_crt_cb_toggled(toggled_on: bool) -> void:
-	crt_effect.toggle_crt.emit()
+	CrtEffect.toggle_crt.emit()

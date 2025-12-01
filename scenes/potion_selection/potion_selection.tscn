@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://c77viks16xf0n"]
+[gd_scene load_steps=9 format=3 uid="uid://c77viks16xf0n"]
 
 [ext_resource type="Script" uid="uid://cw70bdykuk6s" path="res://scenes/potion_selection/potion_selection.gd" id="1_vpfhd"]
 [ext_resource type="Texture2D" uid="uid://biobq2pfddkf8" path="res://assets/potion_selection_assets/seller.png" id="2_ny5bg"]
 [ext_resource type="PackedScene" uid="uid://co8iuks1bypf4" path="res://scenes/item_container/components/item_container_visual.tscn" id="3_f2w0q"]
 [ext_resource type="Texture2D" uid="uid://cpo1rg37dfngy" path="res://assets/main_menu/background.png" id="4_p4ayx"]
 [ext_resource type="Shader" uid="uid://b14jpbt5ijyd8" path="res://scenes/post_processing_effects/blur.gdshader" id="5_wqd0t"]
-[ext_resource type="PackedScene" uid="uid://6ndtlmtwcxyc" path="res://scenes/post_processing_effects/crt_effect.tscn" id="6_w20wb"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wyq6n"]
 texture = ExtResource("4_p4ayx")
@@ -80,12 +79,6 @@ offset_bottom = 208.59998
 scale = Vector2(2.5, 2.5)
 mouse_filter = 2
 metadata/_edit_use_anchors_ = true
-
-[node name="CrtEffect" parent="." instance=ExtResource("6_w20wb")]
-offset_left = 527.0
-offset_top = 332.0
-offset_right = 527.0
-offset_bottom = 332.0
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="cauldron_full" from="CanvasLayer/ItemContainerVisual" to="." method="_on_cauldron_full"]

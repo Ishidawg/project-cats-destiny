@@ -1,10 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://6k3xfdbtsw8i"]
+[gd_scene load_steps=20 format=3 uid="uid://6k3xfdbtsw8i"]
 
 [ext_resource type="Script" uid="uid://blim6llfuptfy" path="res://scenes/main_menu/main_menu.gd" id="1_ob46e"]
 [ext_resource type="FontFile" uid="uid://bayl34n5s6ic7" path="res://fonts/dungeon-mode.ttf" id="2_ob46e"]
 [ext_resource type="Texture2D" uid="uid://dpl4yn6qgbxc1" path="res://assets/main_menu/telainicialanimada1.png" id="2_x2yjq"]
 [ext_resource type="Texture2D" uid="uid://tshto0imdpd5" path="res://assets/main_menu/telainicialanimada2.png" id="3_lqpn7"]
-[ext_resource type="PackedScene" uid="uid://6ndtlmtwcxyc" path="res://scenes/post_processing_effects/crt_effect.tscn" id="3_ob46e"]
 [ext_resource type="Texture2D" uid="uid://c7v8shh2wx2um" path="res://assets/main_menu/telainicialanimada3.png" id="4_qel0l"]
 [ext_resource type="Texture2D" uid="uid://cgcitnblegmfr" path="res://assets/main_menu/telainicialanimada4.png" id="5_rrgl4"]
 [ext_resource type="AudioStream" uid="uid://bvw61blbsx1wd" path="res://soundtrack/Charm Studies OST/05 Uncertainty Matrix (title_screen).ogg" id="5_wem23"]
@@ -230,15 +229,6 @@ theme_override_font_sizes/font_size = 18
 theme_override_styles/focus = SubResource("StyleBoxEmpty_thkx5")
 text = "Close"
 flat = true
-
-[node name="CrtEffect" parent="." instance=ExtResource("3_ob46e")]
-unique_name_in_owner = true
-visible = false
-layout_mode = 0
-offset_left = 320.0
-offset_top = 510.0
-offset_right = 320.0
-offset_bottom = 510.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_wem23")

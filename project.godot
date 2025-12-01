@@ -21,12 +21,12 @@ ClassesDictionary="*res://global_scripts/classes_dictionary.gd"
 SceneTransition="*res://scenes/scene_transition/scene_transition.tscn"
 PlayerData="*res://global_scripts/player_data.gd"
 OstPlayer="*res://scenes/non_stop_ost/ost_player.tscn"
+CrtEffect="*res://scenes/post_processing_effects/crt_effect.tscn"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-window/size/mode=3
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 

@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://ivjh1ebkavp2"]
+[gd_scene load_steps=7 format=3 uid="uid://ivjh1ebkavp2"]
 
 [ext_resource type="Script" uid="uid://c4uya847qx334" path="res://scenes/post_selection/post_selection.gd" id="1_00whi"]
 [ext_resource type="Texture2D" uid="uid://cpo1rg37dfngy" path="res://assets/main_menu/background.png" id="2_x33sa"]
 [ext_resource type="Texture2D" uid="uid://bspaqysmwi720" path="res://assets/potion_selection_assets/gato.png" id="3_ea2gx"]
 [ext_resource type="Texture2D" uid="uid://biobq2pfddkf8" path="res://assets/potion_selection_assets/seller.png" id="4_n4y7s"]
-[ext_resource type="PackedScene" uid="uid://6ndtlmtwcxyc" path="res://scenes/post_processing_effects/crt_effect.tscn" id="5_t3g17"]
 [ext_resource type="PackedScene" uid="uid://dexyk2m4f8wgm" path="res://scenes/dialogue/dialogue_player.tscn" id="6_3hnj5"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6q75f"]
@@ -35,12 +34,6 @@ position = Vector2(980, 250.00002)
 scale = Vector2(3.097826, 3.0978262)
 texture = ExtResource("4_n4y7s")
 
-[node name="CrtEffect" parent="DefaultLayer" instance=ExtResource("5_t3g17")]
-offset_left = 604.0
-offset_top = 350.0
-offset_right = 604.0
-offset_bottom = 350.0
-
 [node name="DialogPlayer" parent="DefaultLayer" instance=ExtResource("6_3hnj5")]
 visibility_layer = 3
 y_sort_enabled = true
@@ -49,9 +42,6 @@ size_flags_vertical = 4
 scene_text_file = "res://data/json/dialogs.json"
 dialog_key = "blank"
 title_key = "bruxa_vendedora_title"
-
-[node name="DialogLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="finished" from="DefaultLayer/DialogPlayer" to="." method="_on_dialog_player_finished"]
